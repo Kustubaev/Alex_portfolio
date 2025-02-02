@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <main class="main">
+    <section class="settings">
+      <div class="container">
+        <div class="settings__inner">
+          <div class="settings__info">
+            <h2 class="settings__info-title">Kapybara1917</h2>
+            <div class="settings__info-wrapper">
+              <div class="settings__info-text">
+                <input class="input" type="text" name="username" value="Email: wwweee@gmail.com" disabled>
+              </div>
+              <div class="settings__div-main">
+                <button class="settings__button-main button-pink" type="submit">Log out</button>
+                <a class="settings__button-main button-pink" href="index.html">Back</a>
+              </div>
+            </div>
+          </div>
+          <div class="settings__change">
+            <p class="settings__change-title">Want to change your profile settings?</p>
+            <form name="changeLogin" class="settings__form" action="#" method="get" enctype="multipart/form-data">
+              <div class="settings__div">
+                <input class="input req" type="text" name="username" placeholder="New login:">
+                <button class="settings__button" type="submit">Change login</button>
+              </div>
+            </form>
+            <form name="changePassword" class="settings__form" action="#" method="get" enctype="multipart/form-data">
+              <div class="settings__div">
+                <div class="input__eye-box">
+                  <input class="input req" type="password" name="userpass" placeholder="Current password:">
+                  <span class="input__eye"><img src="./images/eye.svg" alt=""></span>
+                </div>
+                <button class="settings__button" type="submit">Change password</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+  <script src="js/main.min.js"></script>
+
+  </body>
+
+  </html>

@@ -1,0 +1,41 @@
+<!--=include header.html-->
+<body>
+
+  <main class="main">
+    <section class="registration">
+      <div class="container registration__container">
+        <div class="registration__inner">
+          <div class="registration__logo registration__logo-signup">
+            <img class="registration__images" src="./images/logo-white.png" alt="" >
+          </div>
+          <h1 class="registration__title">Sign up</h1>
+          <form name="signup" class="registration__form" action="#" method="get" enctype="multipart/form-data">
+            <div class="registration__input">
+              <input class="input" type="email" name="useremail" placeholder="Email:">
+            </div>
+            <div class="registration__input">
+              <input class="input" type="text" name="username" placeholder="Login:">
+            </div>
+            <div class="registration__input">
+              <div class="input__eye-box">
+                <input class="input" type="password" name="userpass" placeholder="Password:">
+                <span class="input__eye"><img src="./images/eye.svg" alt=""></span>
+              </div>
+            </div>
+            <p class="registration__text-signup">By selecting Agree and continue below,</p>
+            <div class="registration__text-box">
+              <input class="registration__text-checkbox" type="checkbox" id="reg" name="agree" value="agree">
+              <label for="reg"></label>
+              <p class="registration__text-signup">I agree to the</p>
+              <a class="registration__link-signup" href="#">Terms of Service and Privacy</a>
+            </div>
+            <div class="registration__button-box">
+              <button class="registration__button button-pink" type="submit">Continue</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<!--=include footer.html-->

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+  <main class="main">
+    <section class="registration">
+      <div class="container registration__container">
+        <div class="registration__inner">
+          <div class="registration__logo registration__logo-conf">
+            <img class="registration__images" src="./images/logo-white.png" alt="" >
+          </div>
+          <h1 class="registration__title-conf">Email confirmation</h1>
+          <p class="registration__suptext-conf">Confirmation code was sent to your e-mail:</p>
+          <p class="registration__email-conf">gggaa@gmail.com</p>
+          <form name="conf" class="registration__form" action="#" method="get" enctype="multipart/form-data">
+            <div class="registration__input registration__input-conf">
+              <input class="input" type="text" name="usercode" placeholder="Code:">
+            </div>
+            <p class="registration__text registration__text-conf">Code input left <span>60</span> seconds</p>
+            <div class="registration__button-conf">
+              <button class="registration__link-conf" type="submit">Resend the code</button>
+            </div>
+            <div class="registration__button-box">
+              <button class="registration__button button-pink" type="submit">Continue</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

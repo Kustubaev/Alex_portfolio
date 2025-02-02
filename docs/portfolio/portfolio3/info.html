@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header header__logged">
+    <div class="header__inner">
+      <div class="logo header__logo">
+        <a class="logo__link" href="index.html">
+          <img class="logo__img" src="./images/logo.png" alt="">
+        </a>
+      </div>
+      <ul class="header__list">
+        <li class="header__item header__item-first">
+          <a class="header__link" href="dialog.html">
+            <span>My Requests</span>
+          </a>
+        </li>
+        <li class="header__item">
+          <a id="header__request" class="header__link" href="#">
+            <span>Request</span>
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="info.html">
+            <span>About Us</span>
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="index.html#footer">
+            <span>Contact Us</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="header__list-enter">
+        <li class="header__item">
+          <a class="header__link" href="login.html">
+            <span>Log in</span>
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="signup.html">
+            <span>Sign up</span>
+          </a>
+        </li>
+      </ul>
+      <div class="header__social">
+        <div class="header__social-item">
+          <div class="header__social-link" id="header__social-link">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M23.7242 31.794C25.1656 31.794 25.9271 33.5887 24.9657 34.7174C24.3411 35.4525 23.5758 36.0405 22.7201 36.4428C21.8643 36.8451 20.9374 37.0526 20 37.0518C19.0627 37.0526 18.1357 36.8451 17.28 36.4428C16.4242 36.0405 15.659 35.4525 15.0344 34.7174C14.1146 33.6378 14.7711 31.95 16.0908 31.8063L16.2741 31.7958L23.7242 31.794ZM20 2C22.2629 2 24.1758 3.58259 24.7907 5.7523L24.8673 6.05199L24.8807 6.12735C26.7176 7.21729 28.2829 8.74941 29.4484 10.5982C30.6139 12.447 31.3464 14.5599 31.5859 16.7638L31.6326 17.2668L31.6643 17.7733V22.9102L31.6992 23.1485C31.9274 24.4399 32.6068 25.5946 33.6038 26.3855L33.8821 26.5906L34.1521 26.7641C35.5851 27.6176 35.0852 29.8592 33.5239 30.0309L33.3306 30.0414H6.66948C4.95651 30.0414 4.3583 27.6509 5.84799 26.7641C6.48291 26.3862 7.03149 25.8667 7.45522 25.2421C7.87895 24.6175 8.16757 23.9029 8.30081 23.1485L8.3358 22.8979L8.33747 17.6927C8.43907 15.4036 9.07258 13.1756 10.1826 11.2037C11.2925 9.23176 12.8451 7.57605 14.7045 6.38148L15.1177 6.1256L15.1344 6.05024C15.3701 5.00223 15.9058 4.0555 16.6692 3.33782C17.4326 2.62013 18.387 2.16603 19.4035 2.0368L19.7068 2.00701L20 2Z"
+                fill="white" />
+            </svg>
+          </div>
+          <div class="header__popup-wrapper" id="header__popup-wrapper">
+            <a class="header__popup" href="dialog.html">
+              <h3 class="header__popup-title">NEW NOTIFICATION</h3>
+              <p class="header__popup-text">
+                You received a new message from "The Beatmappers Group"
+              </p>
+            </a>
+            <a class="header__popup" href="dialog.html">
+              <h3 class="header__popup-title">NEW NOTIFICATION</h3>
+              <p class="header__popup-text">
+                You received a new message from "The Beatmappers Group"
+                You received a new message from "The Beatmappers Group"
+              </p>
+            </a>
+          </div>
+        </div>
+        <a class="header__social-message" href="dialog.html" >
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M36.9972 8.92077C36.9973 9.23718 36.9224 9.54872 36.779 9.8277C36.6357 10.1067 36.4284 10.3445 36.1756 10.5199L19.9991 21.7524L3.82269 10.5199C3.49293 10.2914 3.24257 9.95846 3.10864 9.57026C2.97471 9.18206 2.96433 8.75927 3.07905 8.36446C3.19376 7.96964 3.42747 7.62378 3.74559 7.37804C4.0637 7.1323 4.44933 6.99975 4.8454 7H35.1557C36.1756 7 37 7.86154 37 8.92077H36.9972ZM36.9972 15.7541V30.6039C36.9972 31.3864 36.6987 32.1369 36.1674 32.6902C35.6361 33.2435 34.9155 33.5544 34.1642 33.5544H5.83412C5.08276 33.5544 4.36217 33.2435 3.83088 32.6902C3.29959 32.1369 3.00112 31.3864 3.00112 30.6039V15.7541C3.00112 15.164 3.63288 14.8129 4.10315 15.1404L19.9991 26.1782L35.8951 15.1434C36.0016 15.0692 36.1254 15.0265 36.2533 15.0198C36.3813 15.0131 36.5085 15.0426 36.6216 15.1053C36.7347 15.1679 36.8294 15.2614 36.8955 15.3756C36.9616 15.4899 36.9968 15.6207 36.9972 15.7541Z"
+              fill="white" />
+          </svg>
+        </a>
+        <a class="header__social-person" href="settings.html" >
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M25.5 14.7461C25.5 16.4363 24.8679 18.0574 23.7426 19.2525C22.6174 20.4477 21.0913 21.1192 19.5 21.1192C17.9087 21.1192 16.3826 20.4477 15.2574 19.2525C14.1321 18.0574 13.5 16.4363 13.5 14.7461C13.5 13.0559 14.1321 11.4349 15.2574 10.2397C16.3826 9.04449 17.9087 8.37305 19.5 8.37305C21.0913 8.37305 22.6174 9.04449 23.7426 10.2397C24.8679 11.4349 25.5 13.0559 25.5 14.7461Z"
+              fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M19.5 2C10.3875 2 3 9.84683 3 19.5259C3 29.205 10.3875 37.0518 19.5 37.0518C28.6125 37.0518 36 29.205 36 19.5259C36 9.84683 28.6125 2 19.5 2ZM6 19.5259C6 22.8558 7.0695 25.9213 8.862 28.3558C10.1208 26.5998 11.7449 25.1768 13.6072 24.1979C15.4694 23.2189 17.5196 22.7105 19.5975 22.7124C21.6485 22.7104 23.6729 23.2056 25.5164 24.1604C27.3599 25.1151 28.9739 26.5043 30.2355 28.2219C31.5352 26.4114 32.4103 24.2981 32.7883 22.057C33.1664 19.8158 33.0366 17.5113 32.4097 15.334C31.7828 13.1567 30.6768 11.1693 29.1832 9.5362C27.6896 7.90309 25.8514 6.67123 23.8206 5.94255C21.7898 5.21387 19.6248 5.00931 17.5048 5.34581C15.3848 5.68231 13.3707 6.55019 11.6292 7.87764C9.88762 9.20508 8.46872 10.9539 7.48984 12.9795C6.51097 15.0051 6.00027 17.2491 6 19.5259Z"
+              fill="white" />
+          </svg>
+        </a>
+        <div class="burger" id="burger">
+          <div class="burger__item"></div>
+        </div>
+      </div>
+    </div>
+    <section class="menu" id="menu">
+      <div class="menu__container">
+        <div class="menu__box">
+    
+          <div class="menu__login-logo">
+            <img class="menu__login-img" src="./images/logo.png" alt="">
+          </div>
+    
+          <div class="menu__reg">
+            <h2 class="menu__reg-name">Kapybara1917</h2>
+          </div>
+    
+          <div class="menu__wrapper">
+            <div class="menu__login">
+              <div class="menu__login-title">
+                <a class="menu__login-link" href="login.htm">Log in / </a>
+                <a class="menu__login-link" href="signup.html">Sign up</a>
+              </div>
+            </div>
+    
+            <ul class="menu__list">
+              <li class="menu__list-li menu__reg">
+                <a class="menu__list-link" href="dialog.html">My requests</a>
+              </li>
+              <li class="menu__list-li">
+                <a class="menu__list-link" href="index.html">Request</a>
+              </li>
+              <li class="menu__list-li">
+                <a class="menu__list-link" href="info.html">About us</a>
+              </li>
+              <li class="menu__list-li">
+                <a class="menu__list-link" href="index.html#footer">Contact us</a>
+              </li>
+              <li class="menu__list-li menu__reg">
+                <a class="menu__list-link" href="settings.html">Settings</a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="menu__reg">
+            <div class="menu__reg-inner">
+              <div class="menu__reg-image">
+                <img class="menu__reg-img" src="./images/logo.png" alt="">
+              </div>
+              <a class="menu__reg-button" href="#">Log out</a>
+            </div>
+          </div>
+    
+          <div class="menu__login">
+            <ul class="menu__ul">
+              <li class="menu__ul-li">
+                <a class="menu__ul-link" href="#">
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M42 11.5294C40.6013 12.1471 39.0937 12.5529 37.5316 12.7471C39.13 11.8118 40.3652 10.3294 40.9465 8.54706C39.4388 9.42941 37.7677 10.0471 36.0057 10.4C34.5707 8.88235 32.5545 8 30.2658 8C25.9971 8 22.5096 11.3882 22.5096 15.5706C22.5096 16.1706 22.5822 16.7529 22.7094 17.3C16.2428 16.9824 10.4847 13.9647 6.65201 9.39412C5.97992 10.5059 5.59847 11.8118 5.59847 13.1882C5.59847 15.8176 6.9608 18.1471 9.06788 19.4706C7.7782 19.4706 6.57935 19.1176 5.52581 18.5882V18.6412C5.52581 22.3118 8.21415 25.3824 11.7744 26.0706C10.6313 26.3745 9.43134 26.4168 8.26864 26.1941C8.762 27.6985 9.72822 29.0148 11.0315 29.9581C12.3347 30.9014 13.9095 31.4242 15.5344 31.4529C12.78 33.5714 9.36577 34.7164 5.85277 34.7C5.23518 34.7 4.61759 34.6647 4 34.5941C7.45124 36.7471 11.5564 38 15.9522 38C30.2658 38 38.131 26.4588 38.131 16.4529C38.131 16.1176 38.131 15.8 38.1128 15.4647C39.6386 14.4059 40.9465 13.0647 42 11.5294Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+              <li class="menu__ul-li">
+                <a class="menu__ul-link" href="#">
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M23.5227 8H23.7607C25.9581 8.00799 37.0924 8.08791 40.0945 8.89239C41.0021 9.13792 41.8291 9.61649 42.4929 10.2803C43.1567 10.9441 43.6341 11.7698 43.8773 12.6751C44.1473 13.6873 44.3371 15.0273 44.4654 16.4098L44.4921 16.6868L44.5509 17.3794L44.5723 17.6565C44.7461 20.0912 44.7675 22.3715 44.7701 22.8697V23.0694C44.7675 23.5862 44.7434 26.021 44.5509 28.557L44.5295 28.8367L44.5055 29.1137C44.3718 30.6375 44.174 32.1505 43.8773 33.264C43.6348 34.1696 43.1577 34.9958 42.4938 35.6597C41.8299 36.3236 41.0025 36.8019 40.0945 37.0467C36.9935 37.8778 25.2069 37.9364 23.5735 37.9391H23.1939C22.3679 37.9391 18.9514 37.9231 15.3692 37.8006L14.9147 37.7846L14.6821 37.7739L14.225 37.7553L13.7679 37.7366C10.8005 37.6061 7.97483 37.3957 6.67293 37.044C5.76532 36.7995 4.93813 36.3216 4.27424 35.6581C3.61035 34.9947 3.13307 34.1691 2.89021 33.264C2.59347 32.1532 2.39565 30.6375 2.26198 29.1137L2.2406 28.834L2.21921 28.557C2.08728 26.752 2.01417 24.9431 2 23.1334L2 22.8057C2.00535 22.233 2.02673 20.2537 2.17109 18.0694L2.1898 17.795L2.19782 17.6565L2.21921 17.3794L2.27802 16.6868L2.30476 16.4098C2.43307 15.0273 2.62288 13.6847 2.89288 12.6751C3.13533 11.7695 3.61243 10.9433 4.27635 10.2794C4.94027 9.61551 5.76767 9.13718 6.6756 8.89239C7.9775 8.54609 10.8032 8.33298 13.7705 8.19979L14.225 8.18114L14.6848 8.16516L14.9147 8.15717L15.3718 8.13852C17.916 8.05694 20.4613 8.01165 23.0068 8.00266H23.5227V8ZM19.1091 16.551V29.3854L30.222 22.9709L19.1091 16.551Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+              <li class="menu__ul-li">
+                <a class="menu__ul-link" href="#">
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M39.3682 5.38889L5.26511 19.3489C3.89274 19.999 3.42856 21.3009 4.9334 22.0074L13.6823 24.9589L34.8361 11.0811C35.9911 10.2099 37.1736 10.4422 36.156 11.4006L17.9878 28.8627L17.4171 36.2527C17.9457 37.3937 18.9136 37.399 19.531 36.8319L24.5575 31.7831L33.1662 38.6261C35.1657 39.8826 36.2536 39.0717 36.6838 36.7687L42.3304 8.38667C42.9166 5.55181 41.9169 4.30274 39.3682 5.38889Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+              <li class="menu__ul-li">
+                <a class="menu__ul-link" href="#">
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M26.3753 6C24.1355 6 21.9875 6.87551 20.4037 8.43391C18.8199 9.99232 17.9302 12.106 17.9302 14.3099V18.9365H13.4108C13.1844 18.9365 13 19.1162 13 19.3408V25.4497C13 25.6725 13.1826 25.8539 13.4108 25.8539H17.9302V38.3862C17.9302 38.609 18.1128 38.7904 18.341 38.7904H24.5493C24.7758 38.7904 24.9602 38.6108 24.9602 38.3862V25.8539H29.5197C29.7077 25.8539 29.8721 25.7282 29.9177 25.5485L31.4698 19.4396C31.4851 19.38 31.4863 19.3177 31.4735 19.2576C31.4606 19.1974 31.434 19.1409 31.3956 19.0924C31.3572 19.0439 31.3081 19.0047 31.252 18.9776C31.1959 18.9506 31.1342 18.9365 31.0718 18.9365H24.9602V14.3099C24.9602 14.127 24.9968 13.946 25.0679 13.777C25.139 13.6081 25.2433 13.4546 25.3747 13.3253C25.5061 13.196 25.6621 13.0934 25.8338 13.0234C26.0055 12.9535 26.1895 12.9174 26.3753 12.9174H31.1229C31.3493 12.9174 31.5337 12.7378 31.5337 12.5132V6.40427C31.5337 6.18147 31.3511 6 31.1229 6H26.3753Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__exit" id="menu__exit"></div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="main">
+
+    <section class="info">
+      <div class="container">
+        <div class="info-video__inner">
+          <a class="info-video__link" href="https://www.youtube.com/watch?v=QZEm2N4J3ks" data-fancybox data-width="70%"
+            data-height="70%">
+            <img class="info-video__img" src="images/kapi.png" alt="">
+            <svg class="info-video__btn" width="80px" height="80px" viewBox="0 0 91 91" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M39.3575 62.5625L61.5387 48.3437C62.6004 47.6612 63.1312 46.7133 63.1312 45.5C63.1312 44.2867 62.6004 43.3387 61.5387 42.6562L39.3575 28.4375C38.22 27.6792 37.0628 27.6215 35.8858 28.2646C34.7089 28.9077 34.122 29.9132 34.125 31.2812V59.7187C34.125 61.0837 34.7135 62.0893 35.8904 62.7354C37.0673 63.3815 38.223 63.3239 39.3575 62.5625ZM45.5 91C39.2058 91 33.2908 89.8049 27.755 87.4146C22.2192 85.0243 17.4037 81.7832 13.3088 77.6912C9.21375 73.5962 5.97263 68.7808 3.5854 63.245C1.19817 57.7092 0.00303333 51.7942 0 45.5C0 39.2058 1.19513 33.2908 3.5854 27.755C5.97567 22.2192 9.21678 17.4037 13.3088 13.3088C17.4037 9.21375 22.2192 5.97263 27.755 3.5854C33.2908 1.19817 39.2058 0.00303333 45.5 0C51.7942 0 57.7092 1.19513 63.245 3.5854C68.7808 5.97567 73.5962 9.21678 77.6912 13.3088C81.7862 17.4037 85.0289 22.2192 87.4191 27.755C89.8094 33.2908 91.003 39.2058 91 45.5C91 51.7942 89.8049 57.7092 87.4146 63.245C85.0243 68.7808 81.7832 73.5962 77.6912 77.6912C73.5962 81.7862 68.7808 85.0289 63.245 87.4191C57.7092 89.8094 51.7942 91.003 45.5 91ZM45.5 81.9C55.6617 81.9 64.2687 78.3737 71.3212 71.3212C78.3737 64.2687 81.9 55.6617 81.9 45.5C81.9 35.3383 78.3737 26.7312 71.3212 19.6787C64.2687 12.6262 55.6617 9.1 45.5 9.1C35.3383 9.1 26.7312 12.6262 19.6787 19.6787C12.6262 26.7312 9.1 35.3383 9.1 45.5C9.1 55.6617 12.6262 64.2687 19.6787 71.3212C26.7312 78.3737 35.3383 81.9 45.5 81.9Z"
+                fill="white" />
+            </svg>
+          </a>
+        </div>
+        <div class="info__wrapper">
+          <h3 class="info__title">Leader of The Beatmappers Group.</h3>
+          <div class="info__content">
+            <div class="info__content-left">
+              <div class="info__content-box">
+                <img class="info__content-pic" src="images/kapi.png" alt="">
+                <p class="info__name">keevy</p>
+              </div>
+              <ul class="info__ul">
+                <li class="info__li">
+                  <a class="info__link" href="#">
+                    <div>osu!profile</div>
+                  </a>
+                </li>
+                <li class="info__li">
+                  <a class="info__link" href="#">
+                    <div>Twitter</div>
+                  </a>
+                </li>
+                <li class="info__li">
+                  <a class="info__link" href="#">
+                    <div>Twitch</div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="info__content-right">
+              <div class="info__box">
+                <div class="info__box-inner">
+                  <p class="info__suptext">
+                    An experienced mapper, who worked in the most popular osu! commissions group for more than a year.
+                  </p>
+                  <p class="info__text">
+                    Has finished 50+ commission requests with no revisions.
+                  </p>
+                  <p class="info__subtext">
+                    "I've got some of the most productive and best mappers in the osu! mapping community. My main goal
+                    is
+                    to gain the
+                    customer's trust by providing the fastest and highest quality services."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="popup-form" id="popup-form">
+
+      <div class="container">
+
+        <div class="popup-form__inner">
+
+          <button class="popup-form__close" id="popup-form__close">
+
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+              <path
+
+                d="M14.3282 11.5004L21.9137 3.91774L21.9138 3.91768C22.0996 3.73181 22.2471 3.51116 22.3476 3.26832C22.4482 3.02548 22.5 2.7652 22.5 2.50235C22.5 2.2395 22.4482 1.97923 22.3476 1.73639C22.2471 1.49355 22.0996 1.2729 21.9138 1.08703C21.7279 0.901169 21.5072 0.753734 21.2644 0.653146C21.0216 0.552557 20.7613 0.500785 20.4984 0.500785C20.2356 0.500785 19.9753 0.552557 19.7325 0.653146C19.4896 0.753734 19.269 0.901169 19.0831 1.08703L19.083 1.0871L11.5004 8.67261L3.91812 1.08748C3.91802 1.08738 3.91792 1.08728 3.91782 1.08718C3.9178 1.08715 3.91777 1.08713 3.91774 1.0871C3.73207 0.901055 3.51154 0.75344 3.26876 0.652699C3.02582 0.551889 2.76538 0.5 2.50235 0.5C2.23933 0.5 1.97889 0.551889 1.73594 0.652699C1.493 0.753508 1.27234 0.901256 1.08658 1.08748L1.44058 1.44058L1.08748 1.08658C0.901256 1.27234 0.753508 1.493 0.652699 1.73594C0.551889 1.97889 0.5 2.23933 0.5 2.50235C0.5 2.76538 0.551889 3.02582 0.652699 3.26876C0.75344 3.51154 0.901055 3.73207 1.0871 3.91774C1.08713 3.91777 1.08715 3.9178 1.08718 3.91782C1.08728 3.91792 1.08738 3.91802 1.08748 3.91812L8.67261 11.5004L1.0871 19.083L1.08703 19.0831C0.901169 19.269 0.753734 19.4896 0.653146 19.7325C0.552557 19.9753 0.500785 20.2356 0.500785 20.4984C0.500785 20.7613 0.552557 21.0216 0.653146 21.2644C0.753734 21.5072 0.901169 21.7279 1.08703 21.9138C1.2729 22.0996 1.49355 22.2471 1.73638 22.3476C1.97923 22.4482 2.2395 22.5 2.50235 22.5C2.7652 22.5 3.02548 22.4482 3.26832 22.3476C3.51116 22.2471 3.73181 22.0996 3.91768 21.9138L3.91774 21.9137L11.5004 14.3282L19.083 21.9137L19.0831 21.9138C19.269 22.0996 19.4896 22.2471 19.7325 22.3476C19.9753 22.4482 20.2356 22.5 20.4984 22.5C20.7613 22.5 21.0216 22.4482 21.2644 22.3476C21.5072 22.2471 21.7279 22.0996 21.9138 21.9138L21.5602 21.5602L21.9138 21.9138C22.0996 21.7279 22.2471 21.5072 22.3476 21.2644C22.4482 21.0216 22.5 20.7613 22.5 20.4984C22.5 20.2356 22.4482 19.9753 22.3476 19.7325C22.2471 19.4896 22.0996 19.269 21.9138 19.0831L21.9137 19.083L14.3282 11.5004Z"
+
+                fill="white" stroke="white" />
+
+            </svg>
+
+          </button>
+
+          <h1 class="popup-form__title">Request Form</h1>
+
+          <form name="order" class="popup-form__form" action="#" method="get" enctype="multipart/form-data">
+
+            <div class="popup-form__div popup-form__div-first">
+
+              <p class="popup-form__text">Your song file link:</p>
+
+              <input class="popup-form__input popup-form__input-title req link" type="url" name="inputLink"
+
+                placeholder="Paste the mp3 link here">
+
+            </div>
+
+            <div class="popup-form__box">
+
+              <div class="popup-form__div">
+
+                <p class="popup-form__text">1. Pick the map style:</p>
+
+                <div id="popup-form__first" class="popup-form__select" data-state="">
+
+                  <div id="style" class="popup-form__select-title req" data-default="style" data-value="">Choose</div>
+
+                  <div class="popup-form__select-content">
+
+                    <input id="style-1" class="popup-form__select-input" type="radio" name="radioSel" value="Simple" />
+
+                    <label for="style-1" class="popup-form__select-label" data-value="Simple">Simple</label>
+
+                    <input id="style-2" class="popup-form__select-input" type="radio" name="radioSel" value="High BPM" />
+
+                    <label for="style-2" class="popup-form__select-label" data-value="High BPM">High BPM</label>
+
+                    <input id="style-3" class="popup-form__select-input" type="radio" name="radioSel" value="Tech" />
+
+                    <label for="style-3" class="popup-form__select-label" data-value="Tech">Tech</label>
+
+                    <input id="style-4" class="popup-form__select-input" type="radio" name="radioSel" value="Streams" />
+
+                    <label for="style-4" class="popup-form__select-label" data-value="Streams">Streams</label>
+
+                    <input id="style-5" class="popup-form__select-input" type="radio" name="radioSel" value="Gimmick" />
+
+                    <label for="style-5" class="popup-form__select-label" data-value="Gimmick">Gimmick</label>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="popup-form__div">
+
+                <p class="popup-form__text">2. Write the song length (min:sec):</p>
+
+                <input class="popup-form__input req time" type="text" name="inputTime" placeholder="Example: 7:27">
+
+              </div>
+
+              <div class="popup-form__div">
+
+                <p class="popup-form__text">3. Select the song genre:</p>
+
+                <div id="popup-form__second" class="popup-form__select" data-state="">
+
+                  <div id="genre" class="popup-form__select-title req" data-default="genre" data-value="">Choose</div>
+
+                  <div class="popup-form__select-content">
+
+                    <input id="genre-1" class="popup-form__select-input" type="radio" name="radioGen" value="Video Game" />
+
+                    <label for="genre-1" class="popup-form__select-label" data-value="Video Game">Video Game</label>
+
+                    <input id="genre-2" class="popup-form__select-input" type="radio" name="radioGen" value="Anime" />
+
+                    <label for="genre-2" class="popup-form__select-label" data-value="Anime">Anime</label>
+
+                    <input id="genre-3" class="popup-form__select-input" type="radio" name="radioGen" value="Rock" />
+
+                    <label for="genre-3" class="popup-form__select-label" data-value="Rock">Rock</label>
+
+                    <input id="genre-4" class="popup-form__select-input" type="radio" name="radioGen" value="Pop" />
+
+                    <label for="genre-4" class="popup-form__select-label" data-value="Pop">Pop</label>
+
+                    <input id="genre-5" class="popup-form__select-input" type="radio" name="radioGen" value="Other" />
+
+                    <label for="genre-5" class="popup-form__select-label" data-value="Other">Other</label>
+
+                    <input id="genre-6" class="popup-form__select-input" type="radio" name="radioGen" value="Novelty" />
+
+                    <label for="genre-6" class="popup-form__select-label" data-value="Novelty">Novelty</label>
+
+                    <input id="genre-7" class="popup-form__select-input" type="radio" name="radioGen" value="Hip Hop" />
+
+                    <label for="genre-7" class="popup-form__select-label" data-value="Hip Hop">Hip Hop</label>
+
+                    <input id="genre-8" class="popup-form__select-input" type="radio" name="radioGen" value="Electronic" />
+
+                    <label for="genre-8" class="popup-form__select-label" data-value="Electronic">Electronic</label>
+
+                    <input id="genre-9" class="popup-form__select-input" type="radio" name="radioGen" value="Metal" />
+
+                    <label for="genre-9" class="popup-form__select-label" data-value="Metal">Metal</label>
+
+                    <input id="genre-10" class="popup-form__select-input" type="radio" name="radioGen" value="Classical" />
+
+                    <label for="genre-10" class="popup-form__select-label" data-value="Classical">Classical</label>
+
+                    <input id="genre-11" class="popup-form__select-input" type="radio" name="radioGen" value="Fonk" />
+
+                    <label for="genre-11" class="popup-form__select-label" data-value="Fonk">Fonk</label>
+
+                    <input id="genre-12" class="popup-form__select-input" type="radio" name="radioGen" value="Jazz" />
+
+                    <label for="genre-12" class="popup-form__select-label" data-value="Jazz">Jazz</label>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="popup-form__div">
+
+                <p class="popup-form__text">4. Options:</p>
+
+                <input class="popup-form__checkbox" type="checkbox" id="reg" name="checkReg" value="">
+
+                <label class="popup-form__label" for="reg">Hitsounds</label>
+
+              </div>
+
+              <div class="popup-form__box-div">
+
+                <div class="popup-form__div popup-form__div-last">
+
+                  <p class="popup-form__text">5. Hitsounds (if chosen):</p>
+
+                  <div class="popup-form__radio">
+
+                    <input id="radio-1" type="radio" name="checkHit" value="1000" disabled>
+
+                    <label for="radio-1">Simple (free)</label>
+
+                  </div>
+
+                  <div class="popup-form__radio">
+
+                    <input id="radio-2" type="radio" name="checkHit" value="1500" disabled>
+
+                    <label for="radio-2">Complex (discuss)</label>
+
+                  </div>
+
+                </div>
+
+                <div>
+
+                  <div class="popup-form__price">Price:
+
+                    $<span class="popup-form__value">0</span>
+
+                  </div>
+
+                  <button class="popup-form__button" type="submit">Request</button>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+    
+    <section id="popup-support" class="popup-form" id="popup-support">
+    
+      <div class="container">
+    
+        <div class="popup-support__inner">
+    
+          <button class="popup-support__close" id="popup-support__close">
+    
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+              <path
+    
+                d="M14.3282 11.5004L21.9137 3.91774L21.9138 3.91768C22.0996 3.73181 22.2471 3.51116 22.3476 3.26832C22.4482 3.02548 22.5 2.7652 22.5 2.50235C22.5 2.2395 22.4482 1.97923 22.3476 1.73639C22.2471 1.49355 22.0996 1.2729 21.9138 1.08703C21.7279 0.901169 21.5072 0.753734 21.2644 0.653146C21.0216 0.552557 20.7613 0.500785 20.4984 0.500785C20.2356 0.500785 19.9753 0.552557 19.7325 0.653146C19.4896 0.753734 19.269 0.901169 19.0831 1.08703L19.083 1.0871L11.5004 8.67261L3.91812 1.08748C3.91802 1.08738 3.91792 1.08728 3.91782 1.08718C3.9178 1.08715 3.91777 1.08713 3.91774 1.0871C3.73207 0.901055 3.51154 0.75344 3.26876 0.652699C3.02582 0.551889 2.76538 0.5 2.50235 0.5C2.23933 0.5 1.97889 0.551889 1.73594 0.652699C1.493 0.753508 1.27234 0.901256 1.08658 1.08748L1.44058 1.44058L1.08748 1.08658C0.901256 1.27234 0.753508 1.493 0.652699 1.73594C0.551889 1.97889 0.5 2.23933 0.5 2.50235C0.5 2.76538 0.551889 3.02582 0.652699 3.26876C0.75344 3.51154 0.901055 3.73207 1.0871 3.91774C1.08713 3.91777 1.08715 3.9178 1.08718 3.91782C1.08728 3.91792 1.08738 3.91802 1.08748 3.91812L8.67261 11.5004L1.0871 19.083L1.08703 19.0831C0.901169 19.269 0.753734 19.4896 0.653146 19.7325C0.552557 19.9753 0.500785 20.2356 0.500785 20.4984C0.500785 20.7613 0.552557 21.0216 0.653146 21.2644C0.753734 21.5072 0.901169 21.7279 1.08703 21.9138C1.2729 22.0996 1.49355 22.2471 1.73638 22.3476C1.97923 22.4482 2.2395 22.5 2.50235 22.5C2.7652 22.5 3.02548 22.4482 3.26832 22.3476C3.51116 22.2471 3.73181 22.0996 3.91768 21.9138L3.91774 21.9137L11.5004 14.3282L19.083 21.9137L19.0831 21.9138C19.269 22.0996 19.4896 22.2471 19.7325 22.3476C19.9753 22.4482 20.2356 22.5 20.4984 22.5C20.7613 22.5 21.0216 22.4482 21.2644 22.3476C21.5072 22.2471 21.7279 22.0996 21.9138 21.9138L21.5602 21.5602L21.9138 21.9138C22.0996 21.7279 22.2471 21.5072 22.3476 21.2644C22.4482 21.0216 22.5 20.7613 22.5 20.4984C22.5 20.2356 22.4482 19.9753 22.3476 19.7325C22.2471 19.4896 22.0996 19.269 21.9138 19.0831L21.9137 19.083L14.3282 11.5004Z"
+    
+                fill="white" stroke="white" />
+    
+            </svg>
+    
+          </button>
+    
+          <h1 class="popup-support__title">Support</h1>
+    
+          <p class="popup-support__text">Type your email address:</p>
+    
+          <form name="support" class="popup-support__form" action="#" method="get" enctype="multipart/form-data">
+    
+            <input class="popup-support__input" type="email" name="usersupport" required>
+    
+            <button class="popup-support__button" type="submit">Submit</button>
+    
+          </form>
+    
+        </div>
+    
+      </div>
+    
+    </section>
+    
+    <section class="menu" id="menu">
+    
+      <div class="menu__container">
+    
+        <div class="menu__box">
+    
+    
+    
+          <div class="menu__login-logo">
+    
+            <img class="menu__login-img" src="./images/logo.png" alt="">
+    
+          </div>
+    
+    
+    
+          <div class="menu__reg">
+    
+            <h2 class="menu__reg-name">Kapybara1917</h2>
+    
+          </div>
+    
+    
+    
+          <div class="menu__wrapper">
+    
+            <div class="menu__login">
+    
+              <div class="menu__login-title">
+    
+                <a class="menu__login-link" href="login.htm">Log in / </a>
+    
+                <a class="menu__login-link" href="signup.html">Sign up</a>
+    
+              </div>
+    
+            </div>
+    
+    
+    
+            <ul class="menu__list">
+    
+              <li class="menu__list-li menu__reg">
+    
+                <a class="menu__list-link" href="dialog.html">My requests</a>
+    
+              </li>
+    
+              <li class="menu__list-li">
+    
+                <a class="menu__list-link" href="index.html">Request</a>
+    
+              </li>
+    
+              <li class="menu__list-li">
+    
+                <a class="menu__list-link" href="info.html">About us</a>
+    
+              </li>
+    
+              <li class="menu__list-li">
+    
+                <a class="menu__list-link" href="index.html#footer">Contact us</a>
+    
+              </li>
+    
+              <li class="menu__list-li menu__reg">
+    
+                <a class="menu__list-link" href="settings.html">Settings</a>
+    
+              </li>
+    
+            </ul>
+    
+          </div>
+    
+    
+    
+          <div class="menu__reg">
+    
+            <div class="menu__reg-inner">
+    
+              <div class="menu__reg-image">
+    
+                <img class="menu__reg-img" src="./images/logo.png" alt="">
+    
+              </div>
+    
+              <a class="menu__reg-button" href="#">Log out</a>
+    
+            </div>
+    
+          </div>
+    
+    
+    
+          <div class="menu__login">
+    
+            <ul class="menu__ul">
+    
+              <li class="menu__ul-li">
+    
+                <a class="menu__ul-link" href="#">
+    
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+                    <path
+    
+                      d="M42 11.5294C40.6013 12.1471 39.0937 12.5529 37.5316 12.7471C39.13 11.8118 40.3652 10.3294 40.9465 8.54706C39.4388 9.42941 37.7677 10.0471 36.0057 10.4C34.5707 8.88235 32.5545 8 30.2658 8C25.9971 8 22.5096 11.3882 22.5096 15.5706C22.5096 16.1706 22.5822 16.7529 22.7094 17.3C16.2428 16.9824 10.4847 13.9647 6.65201 9.39412C5.97992 10.5059 5.59847 11.8118 5.59847 13.1882C5.59847 15.8176 6.9608 18.1471 9.06788 19.4706C7.7782 19.4706 6.57935 19.1176 5.52581 18.5882V18.6412C5.52581 22.3118 8.21415 25.3824 11.7744 26.0706C10.6313 26.3745 9.43134 26.4168 8.26864 26.1941C8.762 27.6985 9.72822 29.0148 11.0315 29.9581C12.3347 30.9014 13.9095 31.4242 15.5344 31.4529C12.78 33.5714 9.36577 34.7164 5.85277 34.7C5.23518 34.7 4.61759 34.6647 4 34.5941C7.45124 36.7471 11.5564 38 15.9522 38C30.2658 38 38.131 26.4588 38.131 16.4529C38.131 16.1176 38.131 15.8 38.1128 15.4647C39.6386 14.4059 40.9465 13.0647 42 11.5294Z"
+    
+                      fill="white" />
+    
+                  </svg>
+    
+                </a>
+    
+              </li>
+    
+              <li class="menu__ul-li">
+    
+                <a class="menu__ul-link" href="#">
+    
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+                    <path
+    
+                      d="M23.5227 8H23.7607C25.9581 8.00799 37.0924 8.08791 40.0945 8.89239C41.0021 9.13792 41.8291 9.61649 42.4929 10.2803C43.1567 10.9441 43.6341 11.7698 43.8773 12.6751C44.1473 13.6873 44.3371 15.0273 44.4654 16.4098L44.4921 16.6868L44.5509 17.3794L44.5723 17.6565C44.7461 20.0912 44.7675 22.3715 44.7701 22.8697V23.0694C44.7675 23.5862 44.7434 26.021 44.5509 28.557L44.5295 28.8367L44.5055 29.1137C44.3718 30.6375 44.174 32.1505 43.8773 33.264C43.6348 34.1696 43.1577 34.9958 42.4938 35.6597C41.8299 36.3236 41.0025 36.8019 40.0945 37.0467C36.9935 37.8778 25.2069 37.9364 23.5735 37.9391H23.1939C22.3679 37.9391 18.9514 37.9231 15.3692 37.8006L14.9147 37.7846L14.6821 37.7739L14.225 37.7553L13.7679 37.7366C10.8005 37.6061 7.97483 37.3957 6.67293 37.044C5.76532 36.7995 4.93813 36.3216 4.27424 35.6581C3.61035 34.9947 3.13307 34.1691 2.89021 33.264C2.59347 32.1532 2.39565 30.6375 2.26198 29.1137L2.2406 28.834L2.21921 28.557C2.08728 26.752 2.01417 24.9431 2 23.1334L2 22.8057C2.00535 22.233 2.02673 20.2537 2.17109 18.0694L2.1898 17.795L2.19782 17.6565L2.21921 17.3794L2.27802 16.6868L2.30476 16.4098C2.43307 15.0273 2.62288 13.6847 2.89288 12.6751C3.13533 11.7695 3.61243 10.9433 4.27635 10.2794C4.94027 9.61551 5.76767 9.13718 6.6756 8.89239C7.9775 8.54609 10.8032 8.33298 13.7705 8.19979L14.225 8.18114L14.6848 8.16516L14.9147 8.15717L15.3718 8.13852C17.916 8.05694 20.4613 8.01165 23.0068 8.00266H23.5227V8ZM19.1091 16.551V29.3854L30.222 22.9709L19.1091 16.551Z"
+    
+                      fill="white" />
+    
+                  </svg>
+    
+                </a>
+    
+              </li>
+    
+              <li class="menu__ul-li">
+    
+                <a class="menu__ul-link" href="#">
+    
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+                    <path
+    
+                      d="M39.3682 5.38889L5.26511 19.3489C3.89274 19.999 3.42856 21.3009 4.9334 22.0074L13.6823 24.9589L34.8361 11.0811C35.9911 10.2099 37.1736 10.4422 36.156 11.4006L17.9878 28.8627L17.4171 36.2527C17.9457 37.3937 18.9136 37.399 19.531 36.8319L24.5575 31.7831L33.1662 38.6261C35.1657 39.8826 36.2536 39.0717 36.6838 36.7687L42.3304 8.38667C42.9166 5.55181 41.9169 4.30274 39.3682 5.38889Z"
+    
+                      fill="white" />
+    
+                  </svg>
+    
+                </a>
+    
+              </li>
+    
+              <li class="menu__ul-li">
+    
+                <a class="menu__ul-link" href="#">
+    
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+                    <path
+    
+                      d="M26.3753 6C24.1355 6 21.9875 6.87551 20.4037 8.43391C18.8199 9.99232 17.9302 12.106 17.9302 14.3099V18.9365H13.4108C13.1844 18.9365 13 19.1162 13 19.3408V25.4497C13 25.6725 13.1826 25.8539 13.4108 25.8539H17.9302V38.3862C17.9302 38.609 18.1128 38.7904 18.341 38.7904H24.5493C24.7758 38.7904 24.9602 38.6108 24.9602 38.3862V25.8539H29.5197C29.7077 25.8539 29.8721 25.7282 29.9177 25.5485L31.4698 19.4396C31.4851 19.38 31.4863 19.3177 31.4735 19.2576C31.4606 19.1974 31.434 19.1409 31.3956 19.0924C31.3572 19.0439 31.3081 19.0047 31.252 18.9776C31.1959 18.9506 31.1342 18.9365 31.0718 18.9365H24.9602V14.3099C24.9602 14.127 24.9968 13.946 25.0679 13.777C25.139 13.6081 25.2433 13.4546 25.3747 13.3253C25.5061 13.196 25.6621 13.0934 25.8338 13.0234C26.0055 12.9535 26.1895 12.9174 26.3753 12.9174H31.1229C31.3493 12.9174 31.5337 12.7378 31.5337 12.5132V6.40427C31.5337 6.18147 31.3511 6 31.1229 6H26.3753Z"
+    
+                      fill="white" />
+    
+                  </svg>
+    
+                </a>
+    
+              </li>
+    
+            </ul>
+    
+          </div>
+    
+          <div class="menu__exit" id="menu__exit"></div>
+    
+        </div>
+    
+      </div>
+    
+    </section>
+  </main>
+
+  <footer class="footer"  id="footer">
+    <div class="footer__content">
+      <ul class="footer__items">
+        <li class="footer__item">
+          <a class="footer__link" href="index.html">Request Now</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="info.html">About Us</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="index.html#footer">Contact Us</a>
+        </li>
+      </ul>
+      <p class="footer__text">Follow Us In Social Media</p>
+      <ul class="footer__items footer__items-social">
+        <li class="footer__item-img">
+          <a class="footer__link-img" href="#">
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M42 11.5294C40.6013 12.1471 39.0937 12.5529 37.5316 12.7471C39.13 11.8118 40.3652 10.3294 40.9465 8.54706C39.4388 9.42941 37.7677 10.0471 36.0057 10.4C34.5707 8.88235 32.5545 8 30.2658 8C25.9971 8 22.5096 11.3882 22.5096 15.5706C22.5096 16.1706 22.5822 16.7529 22.7094 17.3C16.2428 16.9824 10.4847 13.9647 6.65201 9.39412C5.97992 10.5059 5.59847 11.8118 5.59847 13.1882C5.59847 15.8176 6.9608 18.1471 9.06788 19.4706C7.7782 19.4706 6.57935 19.1176 5.52581 18.5882V18.6412C5.52581 22.3118 8.21415 25.3824 11.7744 26.0706C10.6313 26.3745 9.43134 26.4168 8.26864 26.1941C8.762 27.6985 9.72822 29.0148 11.0315 29.9581C12.3347 30.9014 13.9095 31.4242 15.5344 31.4529C12.78 33.5714 9.36577 34.7164 5.85277 34.7C5.23518 34.7 4.61759 34.6647 4 34.5941C7.45124 36.7471 11.5564 38 15.9522 38C30.2658 38 38.131 26.4588 38.131 16.4529C38.131 16.1176 38.131 15.8 38.1128 15.4647C39.6386 14.4059 40.9465 13.0647 42 11.5294Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item-img">
+          <a class="footer__link-img" href="#">
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M23.5227 8H23.7607C25.9581 8.00799 37.0924 8.08791 40.0945 8.89239C41.0021 9.13792 41.8291 9.61649 42.4929 10.2803C43.1567 10.9441 43.6341 11.7698 43.8773 12.6751C44.1473 13.6873 44.3371 15.0273 44.4654 16.4098L44.4921 16.6868L44.5509 17.3794L44.5723 17.6565C44.7461 20.0912 44.7675 22.3715 44.7701 22.8697V23.0694C44.7675 23.5862 44.7434 26.021 44.5509 28.557L44.5295 28.8367L44.5055 29.1137C44.3718 30.6375 44.174 32.1505 43.8773 33.264C43.6348 34.1696 43.1577 34.9958 42.4938 35.6597C41.8299 36.3236 41.0025 36.8019 40.0945 37.0467C36.9935 37.8778 25.2069 37.9364 23.5735 37.9391H23.1939C22.3679 37.9391 18.9514 37.9231 15.3692 37.8006L14.9147 37.7846L14.6821 37.7739L14.225 37.7553L13.7679 37.7366C10.8005 37.6061 7.97483 37.3957 6.67293 37.044C5.76532 36.7995 4.93813 36.3216 4.27424 35.6581C3.61035 34.9947 3.13307 34.1691 2.89021 33.264C2.59347 32.1532 2.39565 30.6375 2.26198 29.1137L2.2406 28.834L2.21921 28.557C2.08728 26.752 2.01417 24.9431 2 23.1334L2 22.8057C2.00535 22.233 2.02673 20.2537 2.17109 18.0694L2.1898 17.795L2.19782 17.6565L2.21921 17.3794L2.27802 16.6868L2.30476 16.4098C2.43307 15.0273 2.62288 13.6847 2.89288 12.6751C3.13533 11.7695 3.61243 10.9433 4.27635 10.2794C4.94027 9.61551 5.76767 9.13718 6.6756 8.89239C7.9775 8.54609 10.8032 8.33298 13.7705 8.19979L14.225 8.18114L14.6848 8.16516L14.9147 8.15717L15.3718 8.13852C17.916 8.05694 20.4613 8.01165 23.0068 8.00266H23.5227V8ZM19.1091 16.551V29.3854L30.222 22.9709L19.1091 16.551Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item-img">
+          <a class="footer__link-img" href="#">
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M39.3682 5.38889L5.26511 19.3489C3.89274 19.999 3.42856 21.3009 4.9334 22.0074L13.6823 24.9589L34.8361 11.0811C35.9911 10.2099 37.1736 10.4422 36.156 11.4006L17.9878 28.8627L17.4171 36.2527C17.9457 37.3937 18.9136 37.399 19.531 36.8319L24.5575 31.7831L33.1662 38.6261C35.1657 39.8826 36.2536 39.0717 36.6838 36.7687L42.3304 8.38667C42.9166 5.55181 41.9169 4.30274 39.3682 5.38889Z"
+                fill="white" />
+            </svg>
+    
+          </a>
+        </li>
+        <li class="footer__item-img">
+          <a class="footer__link-img" href="#">
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M26.3753 6C24.1355 6 21.9875 6.87551 20.4037 8.43391C18.8199 9.99232 17.9302 12.106 17.9302 14.3099V18.9365H13.4108C13.1844 18.9365 13 19.1162 13 19.3408V25.4497C13 25.6725 13.1826 25.8539 13.4108 25.8539H17.9302V38.3862C17.9302 38.609 18.1128 38.7904 18.341 38.7904H24.5493C24.7758 38.7904 24.9602 38.6108 24.9602 38.3862V25.8539H29.5197C29.7077 25.8539 29.8721 25.7282 29.9177 25.5485L31.4698 19.4396C31.4851 19.38 31.4863 19.3177 31.4735 19.2576C31.4606 19.1974 31.434 19.1409 31.3956 19.0924C31.3572 19.0439 31.3081 19.0047 31.252 18.9776C31.1959 18.9506 31.1342 18.9365 31.0718 18.9365H24.9602V14.3099C24.9602 14.127 24.9968 13.946 25.0679 13.777C25.139 13.6081 25.2433 13.4546 25.3747 13.3253C25.5061 13.196 25.6621 13.0934 25.8338 13.0234C26.0055 12.9535 26.1895 12.9174 26.3753 12.9174H31.1229C31.3493 12.9174 31.5337 12.7378 31.5337 12.5132V6.40427C31.5337 6.18147 31.3511 6 31.1229 6H26.3753Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+  <script src="js/main.min.js"></script>
+
+  </body>
+
+  </html>

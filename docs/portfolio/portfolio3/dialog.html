@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header header__logged">
+    <div class="header__inner">
+      <div class="logo header__logo">
+        <a class="logo__link" href="index.html">
+          <img class="logo__img" src="./images/logo.png" alt="">
+        </a>
+      </div>
+      <ul class="header__list">
+        <li class="header__item header__item-first">
+          <a class="header__link" href="dialog.html">
+            <span>My Requests</span>
+          </a>
+        </li>
+        <li class="header__item">
+          <a id="header__request" class="header__link" href="#">
+            <span>Request</span>
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="info.html">
+            <span>About Us</span>
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="index.html#footer">
+            <span>Contact Us</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="header__list-enter">
+        <li class="header__item">
+          <a class="header__link" href="login.html">
+            <span>Log in</span>
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="signup.html">
+            <span>Sign up</span>
+          </a>
+        </li>
+      </ul>
+      <div class="header__social">
+        <div class="header__social-item">
+          <div class="header__social-link" id="header__social-link">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M23.7242 31.794C25.1656 31.794 25.9271 33.5887 24.9657 34.7174C24.3411 35.4525 23.5758 36.0405 22.7201 36.4428C21.8643 36.8451 20.9374 37.0526 20 37.0518C19.0627 37.0526 18.1357 36.8451 17.28 36.4428C16.4242 36.0405 15.659 35.4525 15.0344 34.7174C14.1146 33.6378 14.7711 31.95 16.0908 31.8063L16.2741 31.7958L23.7242 31.794ZM20 2C22.2629 2 24.1758 3.58259 24.7907 5.7523L24.8673 6.05199L24.8807 6.12735C26.7176 7.21729 28.2829 8.74941 29.4484 10.5982C30.6139 12.447 31.3464 14.5599 31.5859 16.7638L31.6326 17.2668L31.6643 17.7733V22.9102L31.6992 23.1485C31.9274 24.4399 32.6068 25.5946 33.6038 26.3855L33.8821 26.5906L34.1521 26.7641C35.5851 27.6176 35.0852 29.8592 33.5239 30.0309L33.3306 30.0414H6.66948C4.95651 30.0414 4.3583 27.6509 5.84799 26.7641C6.48291 26.3862 7.03149 25.8667 7.45522 25.2421C7.87895 24.6175 8.16757 23.9029 8.30081 23.1485L8.3358 22.8979L8.33747 17.6927C8.43907 15.4036 9.07258 13.1756 10.1826 11.2037C11.2925 9.23176 12.8451 7.57605 14.7045 6.38148L15.1177 6.1256L15.1344 6.05024C15.3701 5.00223 15.9058 4.0555 16.6692 3.33782C17.4326 2.62013 18.387 2.16603 19.4035 2.0368L19.7068 2.00701L20 2Z"
+                fill="white" />
+            </svg>
+          </div>
+          <div class="header__popup-wrapper" id="header__popup-wrapper">
+            <a class="header__popup" href="dialog.html">
+              <h3 class="header__popup-title">NEW NOTIFICATION</h3>
+              <p class="header__popup-text">
+                You received a new message from "The Beatmappers Group"
+              </p>
+            </a>
+            <a class="header__popup" href="dialog.html">
+              <h3 class="header__popup-title">NEW NOTIFICATION</h3>
+              <p class="header__popup-text">
+                You received a new message from "The Beatmappers Group"
+                You received a new message from "The Beatmappers Group"
+              </p>
+            </a>
+          </div>
+        </div>
+        <a class="header__social-message" href="dialog.html" >
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M36.9972 8.92077C36.9973 9.23718 36.9224 9.54872 36.779 9.8277C36.6357 10.1067 36.4284 10.3445 36.1756 10.5199L19.9991 21.7524L3.82269 10.5199C3.49293 10.2914 3.24257 9.95846 3.10864 9.57026C2.97471 9.18206 2.96433 8.75927 3.07905 8.36446C3.19376 7.96964 3.42747 7.62378 3.74559 7.37804C4.0637 7.1323 4.44933 6.99975 4.8454 7H35.1557C36.1756 7 37 7.86154 37 8.92077H36.9972ZM36.9972 15.7541V30.6039C36.9972 31.3864 36.6987 32.1369 36.1674 32.6902C35.6361 33.2435 34.9155 33.5544 34.1642 33.5544H5.83412C5.08276 33.5544 4.36217 33.2435 3.83088 32.6902C3.29959 32.1369 3.00112 31.3864 3.00112 30.6039V15.7541C3.00112 15.164 3.63288 14.8129 4.10315 15.1404L19.9991 26.1782L35.8951 15.1434C36.0016 15.0692 36.1254 15.0265 36.2533 15.0198C36.3813 15.0131 36.5085 15.0426 36.6216 15.1053C36.7347 15.1679 36.8294 15.2614 36.8955 15.3756C36.9616 15.4899 36.9968 15.6207 36.9972 15.7541Z"
+              fill="white" />
+          </svg>
+        </a>
+        <a class="header__social-person" href="settings.html" >
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M25.5 14.7461C25.5 16.4363 24.8679 18.0574 23.7426 19.2525C22.6174 20.4477 21.0913 21.1192 19.5 21.1192C17.9087 21.1192 16.3826 20.4477 15.2574 19.2525C14.1321 18.0574 13.5 16.4363 13.5 14.7461C13.5 13.0559 14.1321 11.4349 15.2574 10.2397C16.3826 9.04449 17.9087 8.37305 19.5 8.37305C21.0913 8.37305 22.6174 9.04449 23.7426 10.2397C24.8679 11.4349 25.5 13.0559 25.5 14.7461Z"
+              fill="white" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M19.5 2C10.3875 2 3 9.84683 3 19.5259C3 29.205 10.3875 37.0518 19.5 37.0518C28.6125 37.0518 36 29.205 36 19.5259C36 9.84683 28.6125 2 19.5 2ZM6 19.5259C6 22.8558 7.0695 25.9213 8.862 28.3558C10.1208 26.5998 11.7449 25.1768 13.6072 24.1979C15.4694 23.2189 17.5196 22.7105 19.5975 22.7124C21.6485 22.7104 23.6729 23.2056 25.5164 24.1604C27.3599 25.1151 28.9739 26.5043 30.2355 28.2219C31.5352 26.4114 32.4103 24.2981 32.7883 22.057C33.1664 19.8158 33.0366 17.5113 32.4097 15.334C31.7828 13.1567 30.6768 11.1693 29.1832 9.5362C27.6896 7.90309 25.8514 6.67123 23.8206 5.94255C21.7898 5.21387 19.6248 5.00931 17.5048 5.34581C15.3848 5.68231 13.3707 6.55019 11.6292 7.87764C9.88762 9.20508 8.46872 10.9539 7.48984 12.9795C6.51097 15.0051 6.00027 17.2491 6 19.5259Z"
+              fill="white" />
+          </svg>
+        </a>
+        <div class="burger" id="burger">
+          <div class="burger__item"></div>
+        </div>
+      </div>
+    </div>
+    <section class="menu" id="menu">
+      <div class="menu__container">
+        <div class="menu__box">
+    
+          <div class="menu__login-logo">
+            <img class="menu__login-img" src="./images/logo.png" alt="">
+          </div>
+    
+          <div class="menu__reg">
+            <h2 class="menu__reg-name">Kapybara1917</h2>
+          </div>
+    
+          <div class="menu__wrapper">
+            <div class="menu__login">
+              <div class="menu__login-title">
+                <a class="menu__login-link" href="login.htm">Log in / </a>
+                <a class="menu__login-link" href="signup.html">Sign up</a>
+              </div>
+            </div>
+    
+            <ul class="menu__list">
+              <li class="menu__list-li menu__reg">
+                <a class="menu__list-link" href="dialog.html">My requests</a>
+              </li>
+              <li class="menu__list-li">
+                <a class="menu__list-link" href="index.html">Request</a>
+              </li>
+              <li class="menu__list-li">
+                <a class="menu__list-link" href="info.html">About us</a>
+              </li>
+              <li class="menu__list-li">
+                <a class="menu__list-link" href="index.html#footer">Contact us</a>
+              </li>
+              <li class="menu__list-li menu__reg">
+                <a class="menu__list-link" href="settings.html">Settings</a>
+              </li>
+            </ul>
+          </div>
+    
+          <div class="menu__reg">
+            <div class="menu__reg-inner">
+              <div class="menu__reg-image">
+                <img class="menu__reg-img" src="./images/logo.png" alt="">
+              </div>
+              <a class="menu__reg-button" href="#">Log out</a>
+            </div>
+          </div>
+    
+          <div class="menu__login">
+            <ul class="menu__ul">
+              <li class="menu__ul-li">
+                <a class="menu__ul-link" href="#">
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M42 11.5294C40.6013 12.1471 39.0937 12.5529 37.5316 12.7471C39.13 11.8118 40.3652 10.3294 40.9465 8.54706C39.4388 9.42941 37.7677 10.0471 36.0057 10.4C34.5707 8.88235 32.5545 8 30.2658 8C25.9971 8 22.5096 11.3882 22.5096 15.5706C22.5096 16.1706 22.5822 16.7529 22.7094 17.3C16.2428 16.9824 10.4847 13.9647 6.65201 9.39412C5.97992 10.5059 5.59847 11.8118 5.59847 13.1882C5.59847 15.8176 6.9608 18.1471 9.06788 19.4706C7.7782 19.4706 6.57935 19.1176 5.52581 18.5882V18.6412C5.52581 22.3118 8.21415 25.3824 11.7744 26.0706C10.6313 26.3745 9.43134 26.4168 8.26864 26.1941C8.762 27.6985 9.72822 29.0148 11.0315 29.9581C12.3347 30.9014 13.9095 31.4242 15.5344 31.4529C12.78 33.5714 9.36577 34.7164 5.85277 34.7C5.23518 34.7 4.61759 34.6647 4 34.5941C7.45124 36.7471 11.5564 38 15.9522 38C30.2658 38 38.131 26.4588 38.131 16.4529C38.131 16.1176 38.131 15.8 38.1128 15.4647C39.6386 14.4059 40.9465 13.0647 42 11.5294Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+              <li class="menu__ul-li">
+                <a class="menu__ul-link" href="#">
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M23.5227 8H23.7607C25.9581 8.00799 37.0924 8.08791 40.0945 8.89239C41.0021 9.13792 41.8291 9.61649 42.4929 10.2803C43.1567 10.9441 43.6341 11.7698 43.8773 12.6751C44.1473 13.6873 44.3371 15.0273 44.4654 16.4098L44.4921 16.6868L44.5509 17.3794L44.5723 17.6565C44.7461 20.0912 44.7675 22.3715 44.7701 22.8697V23.0694C44.7675 23.5862 44.7434 26.021 44.5509 28.557L44.5295 28.8367L44.5055 29.1137C44.3718 30.6375 44.174 32.1505 43.8773 33.264C43.6348 34.1696 43.1577 34.9958 42.4938 35.6597C41.8299 36.3236 41.0025 36.8019 40.0945 37.0467C36.9935 37.8778 25.2069 37.9364 23.5735 37.9391H23.1939C22.3679 37.9391 18.9514 37.9231 15.3692 37.8006L14.9147 37.7846L14.6821 37.7739L14.225 37.7553L13.7679 37.7366C10.8005 37.6061 7.97483 37.3957 6.67293 37.044C5.76532 36.7995 4.93813 36.3216 4.27424 35.6581C3.61035 34.9947 3.13307 34.1691 2.89021 33.264C2.59347 32.1532 2.39565 30.6375 2.26198 29.1137L2.2406 28.834L2.21921 28.557C2.08728 26.752 2.01417 24.9431 2 23.1334L2 22.8057C2.00535 22.233 2.02673 20.2537 2.17109 18.0694L2.1898 17.795L2.19782 17.6565L2.21921 17.3794L2.27802 16.6868L2.30476 16.4098C2.43307 15.0273 2.62288 13.6847 2.89288 12.6751C3.13533 11.7695 3.61243 10.9433 4.27635 10.2794C4.94027 9.61551 5.76767 9.13718 6.6756 8.89239C7.9775 8.54609 10.8032 8.33298 13.7705 8.19979L14.225 8.18114L14.6848 8.16516L14.9147 8.15717L15.3718 8.13852C17.916 8.05694 20.4613 8.01165 23.0068 8.00266H23.5227V8ZM19.1091 16.551V29.3854L30.222 22.9709L19.1091 16.551Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+              <li class="menu__ul-li">
+                <a class="menu__ul-link" href="#">
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M39.3682 5.38889L5.26511 19.3489C3.89274 19.999 3.42856 21.3009 4.9334 22.0074L13.6823 24.9589L34.8361 11.0811C35.9911 10.2099 37.1736 10.4422 36.156 11.4006L17.9878 28.8627L17.4171 36.2527C17.9457 37.3937 18.9136 37.399 19.531 36.8319L24.5575 31.7831L33.1662 38.6261C35.1657 39.8826 36.2536 39.0717 36.6838 36.7687L42.3304 8.38667C42.9166 5.55181 41.9169 4.30274 39.3682 5.38889Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+              <li class="menu__ul-li">
+                <a class="menu__ul-link" href="#">
+                  <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M26.3753 6C24.1355 6 21.9875 6.87551 20.4037 8.43391C18.8199 9.99232 17.9302 12.106 17.9302 14.3099V18.9365H13.4108C13.1844 18.9365 13 19.1162 13 19.3408V25.4497C13 25.6725 13.1826 25.8539 13.4108 25.8539H17.9302V38.3862C17.9302 38.609 18.1128 38.7904 18.341 38.7904H24.5493C24.7758 38.7904 24.9602 38.6108 24.9602 38.3862V25.8539H29.5197C29.7077 25.8539 29.8721 25.7282 29.9177 25.5485L31.4698 19.4396C31.4851 19.38 31.4863 19.3177 31.4735 19.2576C31.4606 19.1974 31.434 19.1409 31.3956 19.0924C31.3572 19.0439 31.3081 19.0047 31.252 18.9776C31.1959 18.9506 31.1342 18.9365 31.0718 18.9365H24.9602V14.3099C24.9602 14.127 24.9968 13.946 25.0679 13.777C25.139 13.6081 25.2433 13.4546 25.3747 13.3253C25.5061 13.196 25.6621 13.0934 25.8338 13.0234C26.0055 12.9535 26.1895 12.9174 26.3753 12.9174H31.1229C31.3493 12.9174 31.5337 12.7378 31.5337 12.5132V6.40427C31.5337 6.18147 31.3511 6 31.1229 6H26.3753Z"
+                      fill="white" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="menu__exit" id="menu__exit"></div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main class="main">
+    <section class="message admin">
+      <div class="message__container">
+        <div class="message__inner">
+          <div id="message__groups" class="message__groups">
+            <div id="message__groups-btn" class="message__groups-btn"></div>
+            <div class="message__title-box">
+              <h2 class="message__title">My Requests</h2>
+            </div>
+            <ul class="message__ul">
+              <li class="message__li">
+                <a class="message__link" href="#">
+                  <span class="message__name">Song Name</span>
+                  <span class="message__surname">Artist Name</span>
+                </a>
+                <button class="message__li-done">WIP</button>
+              </li>
+              <li class="message__li">
+                <a class="message__link" href="#">
+                  <span class="message__name">Song Name</span>
+                  <span class="message__surname">Artist Name</span>
+                </a>
+                <button class="message__li-done">WIP</button>
+              </li>
+              <li class="message__li">
+                <a class="message__link" href="#">
+                  <span class="message__name">Song Name</span>
+                  <span class="message__surname">Artist Name</span>
+                </a>
+                <button class="message__li-done">WIP</button>
+              </li>
+              <li class="message__li">
+                <a class="message__link" href="#">
+                  <span class="message__name">Song Name</span>
+                  <span class="message__surname">Artist Name</span>
+                </a>
+                <button class="message__li-done">WIP</button>
+              </li>
+              <li class="message__li">
+                <a class="message__link" href="#">
+                  <span class="message__name">Song Name</span>
+                  <span class="message__surname">Artist Name</span>
+                </a>
+                <button class="message__li-done">WIP</button>
+              </li>
+              <li class="message__li">
+                <a class="message__link" href="#">
+                  <span class="message__name">Song Name</span>
+                  <span class="message__surname">Artist Name</span>
+                </a>
+                <button class="message__li-done">WIP</button>
+              </li>
+              <li class="message__li">
+                <a class="message__link" href="#">
+                  <span class="message__name">Song Name</span>
+                  <span class="message__surname">Artist Name</span>
+                </a>
+                <button class="message__li-done">WIP</button>
+              </li>
+              <li class="message__li">
+                <a class="message__link" href="#">
+                  <span class="message__name">Song Name</span>
+                  <span class="message__surname">Artist Name</span>
+                </a>
+                <button class="message__li-done">WIP</button>
+              </li>
+              <li class="message__li">
+                <a class="message__link" href="#">
+                  <span class="message__name">Song Name</span>
+                  <span class="message__surname">Artist Name</span>
+                </a>
+                <button class="message__li-done">WIP</button>
+              </li>
+              <li class="message__li">
+                <a class="message__link" href="#">
+                  <span class="message__name">Song Name</span>
+                  <span class="message__surname">Artist Name</span>
+                </a>
+                <button class="message__li-done">WIP</button>
+              </li>
+              <li class="message__li">
+                <a class="message__link" href="#">
+                  <span class="message__name">Song Name</span>
+                  <span class="message__surname">Artist Name</span>
+                </a>
+                <button class="message__li-done">WIP</button>
+              </li>
+              <li class="message__li">
+                <a class="message__link" href="#">
+                  <span class="message__name">Song Name</span>
+                  <span class="message__surname">Artist Name</span>
+                </a>
+                <button class="message__li-done">WIP</button>
+              </li>
+            </ul>
+          </div>
+          <div class="message__dialogs">
+            <ul class="message__dialogs-content">
+              <div class="message__dialogs-date">12 May 2022</div>
+
+              <li class="message__dialogs-item message__dialogs-user">
+                <div class="message__dialogs-title">keevy</div>
+                <div class="message__dialogs-inner">
+                  <div class="message__dialogs-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iusto
+                    fugiat cumque laudantium tempora dolores maiores repudiandae aspernatur eius culpa at unde vitae
+                    nesciunt ipsum soluta molestiae optio debitis, possimus totam! Fuga neque, officia excepturi,
+                    dolorem enim, nulla magni porro et minus doloribus qui quas vel! Ipsam quasi corrupti hic molestias
+                    consequuntur ipsa, perferendis nam nulla adipisci error iusto animi illo reiciendis fugiat quod
+                    voluptate nostrum eius unde? In blanditiis id voluptas quia optio eius voluptatibus corporis at cum
+                    nisi eum quod odit, odio porro iste ipsum error mollitia aut rem, soluta sunt autem, aliquam atque
+                    magnam. Ad exercitationem reiciendis perspiciatis rem ea vitae similique amet qui facere saepe
+                    tempora natus esse est nam deserunt laborum dicta enim explicabo nulla necessitatibus quidem non
+                    consequatur, nihil neque! Nulla numquam laboriosam corrupti doloremque hic ullam, ipsam id. Cum
+                    dicta beatae voluptatibus dolor quis quisquam minima molestiae neque accusamus explicabo, et iusto
+                    laborum.</div>
+                  <div class="message__dialogs-time">5:50 AM</div>
+                </div>
+              </li>
+              <li class="message__dialogs-item message__dialogs-me">
+                <div class="message__dialogs-title">Kapybara1917</div>
+                <div class="message__dialogs-inner">
+                  <div class="message__dialogs-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                  <div class="message__dialogs-time">5:50 AM</div>
+                </div>
+                <div class="message__dialogs-inner">
+                  <div class="message__dialogs-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                    necessitatibus veniam, earum quasi laudantium dignissimos aliquid.</div>
+                  <div class="message__dialogs-time">5:50 AM</div>
+                </div>
+                <div class="message__dialogs-image">
+                  <img src="images/kapi.png" alt="">
+                  <div class="message__dialogs-time__white">15:50 AM</div>
+                </div>
+              </li>
+            </ul>
+            <div class="message__dialogs-wrapper">
+              <div class="message__write message-active">
+                <div id="message__write-image__box" class="message__write-image__box"></div>
+                <form name="message" class="message__write-form" action="#" method="get" enctype="multipart/form-data">
+                  <label class="message__write-attach__box">
+                    <input class="message__write-attach" type="file" name="userfile" accept=".jpg, .png, .gif, .svg">
+                    <svg width="28" height="32" viewBox="0 0 28 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M27.1073 15.2783C27.1941 15.363 27.2629 15.4635 27.3099 15.5742C27.3569 15.6848 27.381 15.8034 27.381 15.9232C27.381 16.043 27.3569 16.1616 27.3099 16.2722C27.2629 16.3829 27.1941 16.4834 27.1073 16.5681L14.3412 29.025C12.7653 30.5632 10.6282 31.4272 8.39993 31.4268C6.17169 31.4263 4.03489 30.5616 2.4596 29.0227C0.884307 27.4838 -0.000437446 25.3969 1.62258e-07 23.221C0.00043777 21.0452 0.886022 18.9586 2.46193 17.4203L17.9053 2.1196C18.4541 1.58325 19.1056 1.1577 19.8228 0.867247C20.5399 0.576789 21.3087 0.427111 22.0851 0.426758C22.8615 0.426406 23.6303 0.575386 24.3478 0.865192C25.0652 1.155 25.7172 1.57995 26.2664 2.1158C26.8157 2.65164 27.2515 3.28788 27.5489 3.98819C27.8464 4.68849 27.9996 5.43915 28 6.1973C28.0004 6.95546 27.8478 7.70625 27.551 8.40683C27.2542 9.1074 26.819 9.74404 26.2703 10.2804L10.8254 25.575C10.184 26.2025 9.31358 26.5555 8.40566 26.5564C7.49773 26.5573 6.62665 26.2059 5.98403 25.5796C5.34141 24.9533 4.9799 24.1033 4.97902 23.2167C4.97815 22.3302 5.33798 21.4795 5.97936 20.852L18.9352 7.98953C19.1089 7.81709 19.3456 7.71909 19.5933 7.7171C19.841 7.7151 20.0794 7.80927 20.256 7.97889C20.4326 8.14851 20.5329 8.37969 20.535 8.62156C20.537 8.86344 20.4406 9.0962 20.2669 9.26864L7.31104 22.1372C7.16619 22.278 7.05115 22.4452 6.97249 22.6293C6.89382 22.8135 6.85308 23.011 6.85257 23.2105C6.85206 23.4101 6.89181 23.6077 6.96954 23.7923C7.04727 23.9768 7.16146 24.1446 7.30559 24.286C7.44972 24.4275 7.62097 24.5398 7.80957 24.6166C7.99816 24.6934 8.20039 24.7332 8.40473 24.7337C8.60907 24.7342 8.81151 24.6954 9.00048 24.6195C9.18946 24.5436 9.36128 24.4321 9.50613 24.2913L24.9449 8.99519C25.704 8.25507 26.131 7.25076 26.1319 6.20321C26.1328 5.15566 25.7075 4.15068 24.9495 3.40934C24.1916 2.66801 23.1631 2.25105 22.0903 2.25019C21.0176 2.24934 19.9884 2.66466 19.2292 3.40478L3.78428 18.6994C2.55804 19.8954 1.86857 21.5181 1.86755 23.2105C1.86653 24.9029 2.55404 26.5264 3.77883 27.7238C5.00362 28.9212 6.66537 29.5945 8.39851 29.5955C10.1316 29.5965 11.7942 28.9252 13.0204 27.7291L25.7865 15.2723C25.8736 15.1879 25.9769 15.1211 26.0904 15.0758C26.2039 15.0304 26.3255 15.0074 26.4482 15.008C26.5708 15.0085 26.6922 15.0327 26.8053 15.0791C26.9184 15.1255 27.021 15.1932 27.1073 15.2783Z"
+                        fill="white" />
+                    </svg>
+                  </label>
+                  <textarea class="message__write-textarea" id="message__textarea" name="message"
+                    placeholder="Type a message..." onkeyup="autoGrow(this);" wrap="hard"></textarea>
+                  <button class="message__write-button" type="submit">
+                    <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M30.25 26.95L32.725 29.425C33.2292 29.9292 33.8708 30.1813 34.65 30.1813C35.4292 30.1813 36.0708 29.9292 36.575 29.425C37.0792 28.9208 37.3312 28.2792 37.3312 27.5C37.3312 26.7208 37.0792 26.0792 36.575 25.575L29.425 18.425C28.875 17.875 28.2333 17.6 27.5 17.6C26.7667 17.6 26.125 17.875 25.575 18.425L18.425 25.575C17.9208 26.0792 17.6687 26.7208 17.6687 27.5C17.6687 28.2792 17.9208 28.9208 18.425 29.425C18.9292 29.9292 19.5708 30.1813 20.35 30.1813C21.1292 30.1813 21.7708 29.9292 22.275 29.425L24.75 26.95V35.75C24.75 36.5292 25.014 37.1828 25.542 37.7108C26.07 38.2388 26.7227 38.5018 27.5 38.5C28.2792 38.5 28.9327 38.236 29.4607 37.708C29.9887 37.18 30.2518 36.5273 30.25 35.75V26.95ZM55 27.5C55 31.3042 54.2777 34.8792 52.833 38.225C51.3883 41.5708 49.4294 44.4813 46.9562 46.9563C44.4812 49.4312 41.5708 51.3902 38.225 52.833C34.8792 54.2758 31.3042 54.9982 27.5 55C23.6958 55 20.1208 54.2777 16.775 52.833C13.4292 51.3883 10.5187 49.4294 8.04375 46.9563C5.56875 44.4813 3.60983 41.5708 2.167 38.225C0.724167 34.8792 0.00183333 31.3042 0 27.5C0 23.6958 0.722333 20.1208 2.167 16.775C3.61167 13.4292 5.57058 10.5188 8.04375 8.04375C10.5187 5.56875 13.4292 3.60892 16.775 2.16426C20.1208 0.719589 23.6958 -0.00183105 27.5 3.8147e-06C31.3042 3.8147e-06 34.8792 0.72234 38.225 2.167C41.5708 3.61167 44.4812 5.57059 46.9562 8.04375C49.4312 10.5188 51.3911 13.4292 52.8357 16.775C54.2804 20.1208 55.0018 23.6958 55 27.5ZM49.5 27.5C49.5 21.3583 47.3687 16.1563 43.1062 11.8938C38.8437 7.63126 33.6417 5.5 27.5 5.5C21.3583 5.5 16.1562 7.63126 11.8937 11.8938C7.63125 16.1563 5.5 21.3583 5.5 27.5C5.5 33.6417 7.63125 38.8438 11.8937 43.1063C16.1562 47.3688 21.3583 49.5 27.5 49.5C33.6417 49.5 38.8437 47.3688 43.1062 43.1063C47.3687 38.8438 49.5 33.6417 49.5 27.5Z"
+                        fill="#FD378E" />
+                    </svg>
+                  </button>
+                </form>
+              </div>
+              <div class="message__done">
+                <div class="message__done-title">
+                  <div>Your order has been done</div>
+                </div>
+                <a class="message__done-download"
+                  href="./images/file.svg" download="filename.svg">
+                  Download
+                  <svg width="34" height="35" viewBox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.3 17.84L13.77 16.31C13.4583 15.9983 13.0617 15.8425 12.58 15.8425C12.0983 15.8425 11.7017 15.9983 11.39 16.31C11.0783 16.6217 10.9225 17.0183 10.9225 17.5C10.9225 17.9817 11.0783 18.3783 11.39 18.69L15.81 23.11C16.15 23.45 16.5467 23.62 17 23.62C17.4533 23.62 17.85 23.45 18.19 23.11L22.61 18.69C22.9217 18.3783 23.0775 17.9817 23.0775 17.5C23.0775 17.0183 22.9217 16.6217 22.61 16.31C22.2983 15.9983 21.9017 15.8425 21.42 15.8425C20.9383 15.8425 20.5417 15.9983 20.23 16.31L18.7 17.84L18.7 12.4C18.7 11.9183 18.5368 11.5143 18.2104 11.1879C17.884 10.8615 17.4805 10.6989 17 10.7C16.5183 10.7 16.1143 10.8632 15.7879 11.1896C15.4615 11.516 15.2989 11.9195 15.3 12.4L15.3 17.84ZM3.8147e-06 17.5C3.8147e-06 15.1483 0.446537 12.9383 1.3396 10.87C2.23267 8.80167 3.44364 7.0025 4.9725 5.4725C6.5025 3.9425 8.30167 2.73153 10.37 1.8396C12.4383 0.947667 14.6483 0.501133 17 0.5C19.3517 0.5 21.5617 0.946533 23.63 1.8396C25.6983 2.73267 27.4975 3.94363 29.0275 5.4725C30.5575 7.0025 31.7685 8.80167 32.6604 10.87C33.5523 12.9383 33.9989 15.1483 34 17.5C34 19.8517 33.5535 22.0617 32.6604 24.13C31.7673 26.1983 30.5564 27.9975 29.0275 29.5275C27.4975 31.0575 25.6983 32.269 23.63 33.1621C21.5617 34.0552 19.3517 34.5011 17 34.5C14.6483 34.5 12.4383 34.0535 10.37 33.1604C8.30167 32.2673 6.5025 31.0564 4.9725 29.5275C3.4425 27.9975 2.23097 26.1983 1.33791 24.13C0.444839 22.0617 -0.00112915 19.8517 3.8147e-06 17.5ZM3.4 17.5C3.4 21.2967 4.7175 24.5125 7.3525 27.1475C9.9875 29.7825 13.2033 31.1 17 31.1C20.7967 31.1 24.0125 29.7825 26.6475 27.1475C29.2825 24.5125 30.6 21.2967 30.6 17.5C30.6 13.7033 29.2825 10.4875 26.6475 7.8525C24.0125 5.2175 20.7967 3.9 17 3.9C13.2033 3.9 9.9875 5.2175 7.3525 7.8525C4.7175 10.4875 3.4 13.7033 3.4 17.5Z"
+                      fill="#FD378E" />
+                  </svg>
+                </a>
+                <div class="message__done-box">
+                  <a id="conf" class="message__done-link" href="#">Confirm order completion</a>
+                  <a id="corr" class="message__done-link" href="#">Request corrections</a>
+                </div>
+              </div>
+              <div class="message__comment">
+                <form name="messageComment" class="message__comment-form" action="#" method="get" enctype="multipart/form-data">
+                  <p class="message__comment-text">
+                    Please, leave a review for this commission.
+                  </p>
+                  <div class="message__comment-wrapper">
+                    <div class="message__comment-text">(5% discount for next order)</div>
+                    <div id="messageRating" class="content__rating-items" data-total-value="0">
+                      <div class="content__rating-item" data-item-value="5">
+                        <svg width="58" height="56" viewBox="0 0 58 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M28.2189 1.13275C28.566 0.326782 29.7087 0.326779 30.0558 1.13274L37.4296 18.2555C37.5744 18.5917 37.8913 18.8219 38.2557 18.8557L56.8191 20.5774C57.6929 20.6585 58.046 21.7453 57.3868 22.3244L43.3807 34.6286C43.1057 34.8702 42.9846 35.2427 43.0651 35.5997L47.1641 53.7866C47.357 54.6426 46.4325 55.3143 45.678 54.8663L29.6479 45.3479C29.3332 45.161 28.9415 45.161 28.6268 45.3479L12.5967 54.8663C11.8422 55.3143 10.9177 54.6426 11.1106 53.7866L15.2096 35.5997C15.2901 35.2427 15.169 34.8702 14.894 34.6286L0.887951 22.3244C0.228689 21.7453 0.581813 20.6585 1.45558 20.5774L20.019 18.8557C20.3834 18.8219 20.7003 18.5917 20.8451 18.2555L28.2189 1.13275Z"
+                            fill="#ddd" />
+                        </svg>
+                      </div>
+                      <div class="content__rating-item" data-item-value="4">
+                        <svg width="58" height="56" viewBox="0 0 58 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M28.2189 1.13275C28.566 0.326782 29.7087 0.326779 30.0558 1.13274L37.4296 18.2555C37.5744 18.5917 37.8913 18.8219 38.2557 18.8557L56.8191 20.5774C57.6929 20.6585 58.046 21.7453 57.3868 22.3244L43.3807 34.6286C43.1057 34.8702 42.9846 35.2427 43.0651 35.5997L47.1641 53.7866C47.357 54.6426 46.4325 55.3143 45.678 54.8663L29.6479 45.3479C29.3332 45.161 28.9415 45.161 28.6268 45.3479L12.5967 54.8663C11.8422 55.3143 10.9177 54.6426 11.1106 53.7866L15.2096 35.5997C15.2901 35.2427 15.169 34.8702 14.894 34.6286L0.887951 22.3244C0.228689 21.7453 0.581813 20.6585 1.45558 20.5774L20.019 18.8557C20.3834 18.8219 20.7003 18.5917 20.8451 18.2555L28.2189 1.13275Z"
+                            fill="#ddd" />
+                        </svg>
+                      </div>
+                      <div class="content__rating-item" data-item-value="3">
+                        <svg width="58" height="56" viewBox="0 0 58 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M28.2189 1.13275C28.566 0.326782 29.7087 0.326779 30.0558 1.13274L37.4296 18.2555C37.5744 18.5917 37.8913 18.8219 38.2557 18.8557L56.8191 20.5774C57.6929 20.6585 58.046 21.7453 57.3868 22.3244L43.3807 34.6286C43.1057 34.8702 42.9846 35.2427 43.0651 35.5997L47.1641 53.7866C47.357 54.6426 46.4325 55.3143 45.678 54.8663L29.6479 45.3479C29.3332 45.161 28.9415 45.161 28.6268 45.3479L12.5967 54.8663C11.8422 55.3143 10.9177 54.6426 11.1106 53.7866L15.2096 35.5997C15.2901 35.2427 15.169 34.8702 14.894 34.6286L0.887951 22.3244C0.228689 21.7453 0.581813 20.6585 1.45558 20.5774L20.019 18.8557C20.3834 18.8219 20.7003 18.5917 20.8451 18.2555L28.2189 1.13275Z"
+                            fill="#ddd" />
+                        </svg>
+                      </div>
+                      <div class="content__rating-item" data-item-value="2">
+                        <svg width="58" height="56" viewBox="0 0 58 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M28.2189 1.13275C28.566 0.326782 29.7087 0.326779 30.0558 1.13274L37.4296 18.2555C37.5744 18.5917 37.8913 18.8219 38.2557 18.8557L56.8191 20.5774C57.6929 20.6585 58.046 21.7453 57.3868 22.3244L43.3807 34.6286C43.1057 34.8702 42.9846 35.2427 43.0651 35.5997L47.1641 53.7866C47.357 54.6426 46.4325 55.3143 45.678 54.8663L29.6479 45.3479C29.3332 45.161 28.9415 45.161 28.6268 45.3479L12.5967 54.8663C11.8422 55.3143 10.9177 54.6426 11.1106 53.7866L15.2096 35.5997C15.2901 35.2427 15.169 34.8702 14.894 34.6286L0.887951 22.3244C0.228689 21.7453 0.581813 20.6585 1.45558 20.5774L20.019 18.8557C20.3834 18.8219 20.7003 18.5917 20.8451 18.2555L28.2189 1.13275Z"
+                            fill="#ddd" />
+                        </svg>
+                      </div>
+                      <div class="content__rating-item" data-item-value="1">
+                        <svg width="58" height="56" viewBox="0 0 58 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                            d="M28.2189 1.13275C28.566 0.326782 29.7087 0.326779 30.0558 1.13274L37.4296 18.2555C37.5744 18.5917 37.8913 18.8219 38.2557 18.8557L56.8191 20.5774C57.6929 20.6585 58.046 21.7453 57.3868 22.3244L43.3807 34.6286C43.1057 34.8702 42.9846 35.2427 43.0651 35.5997L47.1641 53.7866C47.357 54.6426 46.4325 55.3143 45.678 54.8663L29.6479 45.3479C29.3332 45.161 28.9415 45.161 28.6268 45.3479L12.5967 54.8663C11.8422 55.3143 10.9177 54.6426 11.1106 53.7866L15.2096 35.5997C15.2901 35.2427 15.169 34.8702 14.894 34.6286L0.887951 22.3244C0.228689 21.7453 0.581813 20.6585 1.45558 20.5774L20.019 18.8557C20.3834 18.8219 20.7003 18.5917 20.8451 18.2555L28.2189 1.13275Z"
+                            fill="#ddd" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="message__comment-box">
+                    <textarea class="message__write-textarea" id="message__textarea" name="usermessage"
+                      placeholder="Write a comment..." onkeyup="autoGrow(this);"></textarea>
+                    <button class="message__write-button" type="submit">
+                      <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M30.25 26.95L32.725 29.425C33.2292 29.9292 33.8708 30.1813 34.65 30.1813C35.4292 30.1813 36.0708 29.9292 36.575 29.425C37.0792 28.9208 37.3312 28.2792 37.3312 27.5C37.3312 26.7208 37.0792 26.0792 36.575 25.575L29.425 18.425C28.875 17.875 28.2333 17.6 27.5 17.6C26.7667 17.6 26.125 17.875 25.575 18.425L18.425 25.575C17.9208 26.0792 17.6687 26.7208 17.6687 27.5C17.6687 28.2792 17.9208 28.9208 18.425 29.425C18.9292 29.9292 19.5708 30.1813 20.35 30.1813C21.1292 30.1813 21.7708 29.9292 22.275 29.425L24.75 26.95V35.75C24.75 36.5292 25.014 37.1828 25.542 37.7108C26.07 38.2388 26.7227 38.5018 27.5 38.5C28.2792 38.5 28.9327 38.236 29.4607 37.708C29.9887 37.18 30.2518 36.5273 30.25 35.75V26.95ZM55 27.5C55 31.3042 54.2777 34.8792 52.833 38.225C51.3883 41.5708 49.4294 44.4813 46.9562 46.9563C44.4812 49.4312 41.5708 51.3902 38.225 52.833C34.8792 54.2758 31.3042 54.9982 27.5 55C23.6958 55 20.1208 54.2777 16.775 52.833C13.4292 51.3883 10.5187 49.4294 8.04375 46.9563C5.56875 44.4813 3.60983 41.5708 2.167 38.225C0.724167 34.8792 0.00183333 31.3042 0 27.5C0 23.6958 0.722333 20.1208 2.167 16.775C3.61167 13.4292 5.57058 10.5188 8.04375 8.04375C10.5187 5.56875 13.4292 3.60892 16.775 2.16426C20.1208 0.719589 23.6958 -0.00183105 27.5 3.8147e-06C31.3042 3.8147e-06 34.8792 0.72234 38.225 2.167C41.5708 3.61167 44.4812 5.57059 46.9562 8.04375C49.4312 10.5188 51.3911 13.4292 52.8357 16.775C54.2804 20.1208 55.0018 23.6958 55 27.5ZM49.5 27.5C49.5 21.3583 47.3687 16.1563 43.1062 11.8938C38.8437 7.63126 33.6417 5.5 27.5 5.5C21.3583 5.5 16.1562 7.63126 11.8937 11.8938C7.63125 16.1563 5.5 21.3583 5.5 27.5C5.5 33.6417 7.63125 38.8438 11.8937 43.1063C16.1562 47.3688 21.3583 49.5 27.5 49.5C33.6417 49.5 38.8437 47.3688 43.1062 43.1063C47.3687 38.8438 49.5 33.6417 49.5 27.5Z"
+                          fill="#FD378E" />
+                      </svg>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="popup-link" class="popup-form" id="popup-support">
+      <div class="container">
+        <div class="popup-support__inner">
+          <button class="popup-support__close" id="popup-link__close">
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.3282 11.5004L21.9137 3.91774L21.9138 3.91768C22.0996 3.73181 22.2471 3.51116 22.3476 3.26832C22.4482 3.02548 22.5 2.7652 22.5 2.50235C22.5 2.2395 22.4482 1.97923 22.3476 1.73639C22.2471 1.49355 22.0996 1.2729 21.9138 1.08703C21.7279 0.901169 21.5072 0.753734 21.2644 0.653146C21.0216 0.552557 20.7613 0.500785 20.4984 0.500785C20.2356 0.500785 19.9753 0.552557 19.7325 0.653146C19.4896 0.753734 19.269 0.901169 19.0831 1.08703L19.083 1.0871L11.5004 8.67261L3.91812 1.08748C3.91802 1.08738 3.91792 1.08728 3.91782 1.08718C3.9178 1.08715 3.91777 1.08713 3.91774 1.0871C3.73207 0.901055 3.51154 0.75344 3.26876 0.652699C3.02582 0.551889 2.76538 0.5 2.50235 0.5C2.23933 0.5 1.97889 0.551889 1.73594 0.652699C1.493 0.753508 1.27234 0.901256 1.08658 1.08748L1.44058 1.44058L1.08748 1.08658C0.901256 1.27234 0.753508 1.493 0.652699 1.73594C0.551889 1.97889 0.5 2.23933 0.5 2.50235C0.5 2.76538 0.551889 3.02582 0.652699 3.26876C0.75344 3.51154 0.901055 3.73207 1.0871 3.91774C1.08713 3.91777 1.08715 3.9178 1.08718 3.91782C1.08728 3.91792 1.08738 3.91802 1.08748 3.91812L8.67261 11.5004L1.0871 19.083L1.08703 19.0831C0.901169 19.269 0.753734 19.4896 0.653146 19.7325C0.552557 19.9753 0.500785 20.2356 0.500785 20.4984C0.500785 20.7613 0.552557 21.0216 0.653146 21.2644C0.753734 21.5072 0.901169 21.7279 1.08703 21.9138C1.2729 22.0996 1.49355 22.2471 1.73638 22.3476C1.97923 22.4482 2.2395 22.5 2.50235 22.5C2.7652 22.5 3.02548 22.4482 3.26832 22.3476C3.51116 22.2471 3.73181 22.0996 3.91768 21.9138L3.91774 21.9137L11.5004 14.3282L19.083 21.9137L19.0831 21.9138C19.269 22.0996 19.4896 22.2471 19.7325 22.3476C19.9753 22.4482 20.2356 22.5 20.4984 22.5C20.7613 22.5 21.0216 22.4482 21.2644 22.3476C21.5072 22.2471 21.7279 22.0996 21.9138 21.9138L21.5602 21.5602L21.9138 21.9138C22.0996 21.7279 22.2471 21.5072 22.3476 21.2644C22.4482 21.0216 22.5 20.7613 22.5 20.4984C22.5 20.2356 22.4482 19.9753 22.3476 19.7325C22.2471 19.4896 22.0996 19.269 21.9138 19.0831L21.9137 19.083L14.3282 11.5004Z"
+                fill="white" stroke="white" />
+            </svg>
+          </button>
+          <h1 class="popup-support__title">Link</h1>
+          <p class="popup-support__text">Enter the link</p>
+          <form name="link" class="popup-support__form" action="#" method="get" enctype="multipart/form-data">
+            <input class="popup-support__input" type="text" name="adminLink" required>
+            <button class="popup-support__button" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+  <script src="js/main.min.js"></script>
+
+  </body>
+
+  </html>

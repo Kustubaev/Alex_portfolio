@@ -4,236 +4,388 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artificial</title>
+  <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700&display=swap"
-    rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
 </head>
 <body>
 
   <header class="header">
-    <div class="header__top">
-      <div class="container">
-        <div class="header__inner">
-          <a class="header__logo" href="#">
-            <img class="logo" src="./images/logo.png" alt="">
-            <div class="logo-text">Artificial Intelligence</div>
+    <div class="container">
+      <div class="header__inner">
+        <div class="logo header__logo">
+          <a class="logo__link" href="./index.html" data-scroll="#header-content">
+            <img src="./images/logo.svg" alt="">
           </a>
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__link" href="#">Home</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">About</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">Services</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">Blog</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="#">Contact</a>
-            </li>
-          </ul>
-          <div class="header__buttons">
-            <div class="btn">
-              <span>Sign In</span>
-              <div class="dot"></div>
-            </div>
-            <button class="header__btn">
-              <span></span>
-            </button>
-          </div>
         </div>
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="./menu.html">
+              <span>Кроссовки</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" data-scroll="#about">
+              <span>О нас</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" data-scroll="#delivery">
+              <span>Доставка</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#" data-scroll="#contacts">
+              <span>Контакты</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="./quality.html">
+              <span>Качество</span>
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="./gallery.html">
+              <span>Архив</span>
+            </a>
+          </li>
+        </ul>
+        <div class="header__social">
+          <a class="header__social-link" href="https://vk.com/im?sel=190565303" target="_blank">
+            <svg class="vk" width="40" height="40" viewBox="0 0 40 40">
+              <path fill="#222" class="path-1"
+                d="M30,0H10A10,10,0,0,0,0,10V30A10,10,0,0,0,10,40H30A10,10,0,0,0,40,30V10A10,10,0,0,0,30,0Zm8.64,31.18a7.5,7.5,0,0,1-7.5,7.5H8.82a7.5,7.5,0,0,1-7.5-7.5V8.82a7.5,7.5,0,0,1,7.5-7.5H31.18a7.5,7.5,0,0,1,7.5,7.5Z" />
+              <path fill="#222" class="path-2"
+                d="M35,13c.22-.72,0-1.24-1-1.24H30.53a1.47,1.47,0,0,0-1.48.95,27.94,27.94,0,0,1-4.19,6.88c-.79.78-1.16,1-1.59,1-.21,0-.54-.25-.54-1V13c0-.86-.25-1.24-1-1.24H16.41a.82.82,0,0,0-.87.77c0,.81,1.23,1,1.35,3.28v5c0,1.08-.19,1.28-.63,1.28-1.16,0-4-4.19-5.63-9-.34-.93-.67-1.3-1.54-1.3H5.68c-1,0-1.17.45-1.17.95,0,.89,1.16,5.32,5.39,11.16,2.81,4,6.78,6.16,10.4,6.16,2.17,0,2.43-.48,2.43-1.31,0-3.81-.19-4.17.89-4.17.51,0,1.37.25,3.4,2.17C29.33,29,29.72,30,31,30h3.41c1,0,1.47-.48,1.18-1.43-.65-2-5-6.09-5.22-6.36-.51-.64-.36-.93,0-1.5C30.38,20.7,34.54,14.92,35,13Z" />
+            </svg>
+          </a>
+          <a class="header__social-link" href="https://www.instagram.com/direct/inbox/" target="_blank">
+            <svg class="instagram" width="40" height="40" viewBox="0 0 40 40">
+              <path fill="#222" class="path-1"
+                d="M30,0H10A10,10,0,0,0,0,10V30A10,10,0,0,0,10,40H30A10,10,0,0,0,40,30V10A10,10,0,0,0,30,0Zm8.28,31A7.35,7.35,0,0,1,31,38.32H9A7.35,7.35,0,0,1,1.68,31V9A7.35,7.35,0,0,1,9,1.68H31A7.35,7.35,0,0,1,38.32,9Z" />
+              <path fill="#222" class="path-2"
+                d="M20.11,12.63a7.27,7.27,0,1,0,7.27,7.27A7.26,7.26,0,0,0,20.11,12.63Zm0,12a4.73,4.73,0,1,1,4.73-4.73A4.74,4.74,0,0,1,20.11,24.63Zm9.26-12.29a1.7,1.7,0,1,1-1.69-1.7A1.69,1.69,0,0,1,29.37,12.34Zm4.82,1.72A8.39,8.39,0,0,0,31.9,8.12,8.42,8.42,0,0,0,26,5.83c-2.34-.14-9.35-.14-11.69,0A8.37,8.37,0,0,0,8.33,8.11,8.38,8.38,0,0,0,6,14.05c-.14,2.34-.14,9.35,0,11.7a8.38,8.38,0,0,0,2.29,5.94A8.44,8.44,0,0,0,14.27,34c2.34.14,9.35.14,11.69,0a8.37,8.37,0,0,0,5.94-2.28,8.51,8.51,0,0,0,2.29-5.94C34.32,23.4,34.32,16.4,34.19,14.06Zm-3,14.2A4.78,4.78,0,0,1,28.47,31c-1.87.74-6.29.57-8.36.57s-6.49.17-8.35-.57a4.78,4.78,0,0,1-2.69-2.69C8.33,26.39,8.5,22,8.5,19.9s-.17-6.5.57-8.36a4.75,4.75,0,0,1,2.69-2.69c1.87-.74,6.29-.57,8.35-.57s6.5-.16,8.36.57a4.78,4.78,0,0,1,2.69,2.69c.74,1.87.57,6.3.57,8.36S31.9,26.4,31.16,28.26Z" />
+            </svg>
+          </a>
+          <a class="header__social-link" href="https://telegram.org/" target="_blank">
+            <svg class="telegram" width="40" height="40" viewBox="0 0 40 40">
+              <path fill="#222" class="path-1"
+                d="M30,0H10A10,10,0,0,0,0,10V30A10,10,0,0,0,10,40H30A10,10,0,0,0,40,30V10A10,10,0,0,0,30,0Zm8.2,30.92a7.31,7.31,0,0,1-7.32,7.32H9.08a7.31,7.31,0,0,1-7.32-7.32V9.08A7.31,7.31,0,0,1,9.08,1.76H30.92a7.31,7.31,0,0,1,7.32,7.32Z" />
+              <path fill="#222" class="path-2"
+                d="M34.77,10.22,30.32,30.77c-.33,1.46-1.21,1.82-2.45,1.13L21.09,27l-3.28,3.08a1.69,1.69,0,0,1-1.36.65L16.94,24,29.51,12.86c.54-.48-.12-.75-.85-.27L13.12,22.17,6.43,20.12C5,19.68,5,18.7,6.73,18L32.9,8.14C34.11,7.7,35.17,8.41,34.77,10.22Z" />
+            </svg>
+          </a>
+          <a class="header__social-favic" href="./favorites.html">
+            <img class="header__favic" src="./images/icons/heart-black.svg" alt="">
+            <span>1</span>
+          </a>
+          <a class="header__social-favic" href="./basket.html">
+            <img class="header__favic" src="./images/icons/basket.svg" alt="">
+            <span>3</span>
+          </a>
+        </div>
+        <button class="header__btn">
+          <span></span>
+        </button>
       </div>
-    </div>    
+    </div>
   </header>
 
   <main class="main">
 
-    <section class="header-content">
-      <div class="header-content__wrapper">
-        <div class="header-content__inner wow animate__fadeInLeftBig">
-          <div class="header-content__subtext">Next genaretion platform</div>
-          <h1 class="header-content__title">Artificial intelligence & Syber security</h1>
-          <div class="header-content__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing
-            industries for previewing layouts
-            and visual mockups.</div>
-          <div class="header-content__button">
-            <a class="header-content__btn" href="#">Get Started</a>
-            <a class="header-content__video" data-fancybox href="https://www.youtube.com/watch?v=c4YVuD5kdL0">Watch Video</a>
+    <section class="header-content" id="header-content">
+      <div class="container">
+        <div class="header-content__inner">
+          <div class="header-content__images">
+            <img class="header-content__img" src="./images/header-cross.png" alt="">
+          </div>
+          <div class="header-content__info">
+            <h1 class="header-content__title">НОВАЯ КОЛЛЕКЦИЯ 2021</h1>
+            <p class="header-content__text">
+              Стильные кроссовкия, которые не оставят вас без внимания окружающих.
+            </p>
+            <a class="header-content__button" href="./menu.html">Смотреть</a>
           </div>
         </div>
-        <div class="header-content__images wow animate__fadeInRightBig"> 
-          <img class="header-content__img" src="./images/header-bg.png" alt="">
-        </div>
       </div>
+      <a class="header-content__down" href="#" data-scroll="#menu">
+        <img class="header-content__down-img" src="./images/icons/arrows-down.svg" alt="">
+      </a>
     </section>
 
-    <div class="partners">
+    <section class="about" id="about">
       <div class="container">
-        <ul class="partners__list">
-          <li class="partners__item wow animate__fadeInUp" data-wow-delay="0.5s">
-            <a class="partners__link" href="#">
-              <img class="partners__img" src="./images/partners/1.svg" alt="">
-            </a>
-          </li>
-          <li class="partners__item wow animate__fadeInUp" data-wow-delay="0.75s">
-            <a class="partners__link" href="#">
-              <img class="partners__img" src="./images/partners/2.svg" alt="">
-            </a>
-          </li>
-          <li class="partners__item wow animate__fadeInUp" data-wow-delay="1s">
-            <a class="partners__link" href="#">
-              <img class="partners__img" src="./images/partners/3.svg" alt="">
-            </a>
-          </li>
-          <li class="partners__item wow animate__fadeInUp" data-wow-delay="1.25s">
-            <a class="partners__link" href="#">
-              <img class="partners__img" src="./images/partners/4.svg" alt="">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <section class="info">
-      <div class="info__wrapper">
-        <div class="info__images wow animate__fadeInLeftBig">
-          <img class="info__img" src="./images/info-bg.png" alt="">
-        </div>
-        <div class="info__item wow animate__fadeInRightBig">
-          <h2 class="info__title">Apply AI, Deep Learning and Data Sciece to solve</h2>
-          <p class="info__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts
-          and visual mockups.</p>
-          <div class="info__button">
-            <a class="info__btn" href="#">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="slider">
-      <div class="container">
-        <div class="slider__items wow animate__fadeInUp" data-wow-duration="1.5s">
-
-          <div class="slider__item">
-            <div class="slider__images">
-              <img class="slider__img" src="images/slider/1.png" alt="">
-            </div>
-            <div class="slider__title">Expert Prespective Agency Awards</div>
-            <div class="slider__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual
-            mockups.</div>
-          </div>
-
-          <div class="slider__item">
-            <div class="slider__images">
-              <img class="slider__img" src="images/slider/2.png" alt="">
-            </div>
-            <div class="slider__title">Business Prespective Global Agency Awards</div>
-            <div class="slider__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual
-            mockups.</div>
-          </div>
-
-          <div class="slider__item">
-            <div class="slider__images">
-              <img class="slider__img" src="images/slider/3.png" alt="">
-            </div>
-            <div class="slider__title">Value for Results in Global Agency Awards</div>
-            <div class="slider__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for previewing layouts and visual
-            mockups.</div>
-          </div>
-
-          <div class="slider__item">
-            <div class="slider__images">
-              <img class="slider__img" src="images/slider/4.png" alt="">
-            </div>
-            <div class="slider__title">Global Experience in Agency Awards</div>
-            <div class="slider__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</div>
-          </div>
-
-          <div class="slider__item">
-            <div class="slider__images">
-              <img class="slider__img" src="images/slider/1.png" alt="">
-            </div>
-            <div class="slider__title">Expert Prespective Agency Awards</div>
-            <div class="slider__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</div>
-          </div>
-          
-          <div class="slider__item">
-            <div class="slider__images">
-              <img class="slider__img" src="images/slider/2.png" alt="">
-            </div>
-            <div class="slider__title">Business Prespective Global Agency Awards</div>
-            <div class="slider__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</div>
-          </div>
-          
-          <div class="slider__item">
-            <div class="slider__images">
-              <img class="slider__img" src="images/slider/3.png" alt="">
-            </div>
-            <div class="slider__title">Value for Results in Global Agency Awards</div>
-            <div class="slider__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</div>
-          </div>
-          
-          <div class="slider__item">
-            <div class="slider__images">
-              <img class="slider__img" src="images/slider/4.png" alt="">
-            </div>
-            <div class="slider__title">Global Experience in Agency Awards</div>
-            <div class="slider__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</div>
-          </div>
-
-          <div class="slider__item">
-            <div class="slider__images">
-              <img class="slider__img" src="images/slider/2.png" alt="">
-            </div>
-            <div class="slider__title">Business Prespective Global Agency Awards</div>
-            <div class="slider__text">Lorem ipsum is placeholder text commonly used in print, and publishing industries for
-              previewing layouts and visual
-              mockups.</div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="about">
-      <div class="container">
+        <h2 class="about__title title">
+          Почему нам можно доверять
+        </h2>
         <div class="about__inner">
-          <div class="about__info wow animate__fadeInLeftBig" data-wow-offset="200">
-            <h2 class="about__title">What our clients say about our awesome solutions</h2>
-            <p class="about__text">
-              To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from
-              it who do not know.
-            </p>
-            <p class="about__text">
-              Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing .
-            </p>
-            <p class="about__text">
-              Lorem ipsum is placeholder previewing layouts and visual mockups.
-            </p>
-            <p class="about__text">
-              Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts
-              and visual mockups.
+          <div class="about__item">
+            <div class="about__image">
+              <div class="about__img-wrapper"></div>
+              <img class="about__img" src="./images/about/1.png" alt="">
+            </div>
+            <h4 class="about__item-title">
+              Стильные кроссовки
+            </h4>
+            <p class="about__item-text">
+              Доставим ваш заказ в течение 1-3 дней любым удобным способом
             </p>
           </div>
-          <div class="about__images wow animate__fadeInRightBig" data-wow-offset="300">
-            <img class="about__img" src="images/about-bg.png" alt="">
+          <div class="about__item">
+            <div class="about__image">
+              <div class="about__img-wrapper"></div>
+              <img class="about__img" src="./images/about/2.png" alt="">
+            </div>
+            <h4 class="about__item-title">
+              Сотни довольных клиентов
+            </h4>
+            <p class="about__item-text">
+              Доставим ваш заказ в течение 1-3 дней любым удобным способом
+            </p>
+          </div>
+          <div class="about__item">
+            <div class="about__image">
+              <div class="about__img-wrapper"></div>
+              <img class="about__img" src="./images/about/3.png" alt="">
+            </div>
+            <h4 class="about__item-title">
+              100% гарантия качества
+            </h4>
+            <p class="about__item-text">
+              Доставим ваш заказ в течение 1-3 дней любым удобным способом
+            </p>
+          </div>
+          <div class="about__item">
+            <div class="about__image">
+              <div class="about__img-wrapper"></div>
+              <img class="about__img" src="./images/about/4.png" alt="">
+            </div>
+            <h4 class="about__item-title">
+              5 лет на рынке
+            </h4>
+            <p class="about__item-text">
+              Доставим ваш заказ в течение 1-3 дней любым удобным способом
+            </p>
+          </div>      
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <div class="menu__box">
+          <h2 class="menu__title title">
+            Новинки
+          </h2>
+          <a class="menu__link" href="./menu.html">Подробнее</a>
+        </div>
+        <div class="menu__inner">
+
+          <a class="menu__item" href="./product.html">
+            <div class="menu__image">
+              <div class="menu__img-wrapper"></div>
+              <img class="menu__img" src="./images/menu/11.jpg" alt="">
+            </div>
+            <div class="menu__info">
+              <h4 class="menu__info-title">Nike Pegasus</h4>
+              <p class="menu__info-text">Кроссовки беговые</p>
+            </div>
+            <div class="menu__info-price">
+              <span class="menu__info-price__span">2900</span>₽
+              <span class="menu__info-span">3 900₽</span>
+            </div>
+          </a>
+
+          <a class="menu__item" href="./product.html">
+            <div class="menu__image">
+              <div class="menu__img-wrapper"></div>
+              <img class="menu__img" src="./images/menu/2.jpg" alt="">
+            </div>
+            <div class="menu__info">
+              <h4 class="menu__info-title">Adidas Alphabounce</h4>
+              <p class="menu__info-text">Кроссовки беговые</p>
+            </div>
+            <div class="menu__info-price">
+              <span class="menu__info-price__span">3200</span>₽
+              <span class="menu__info-span">3 900₽</span>
+            </div>
+          </a>
+
+          <a class="menu__item" href="./product.html">
+            <div class="menu__image">
+              <div class="menu__img-wrapper"></div>
+              <img class="menu__img" src="./images/menu/3.jpg" alt="">
+            </div>
+            <div class="menu__info">
+              <h4 class="menu__info-title">Nike Pegasus</h4>
+              <p class="menu__info-text">Кроссовки беговые</p>
+            </div>
+            <div class="menu__info-price">
+              <span class="menu__info-price__span">3100</span>₽
+              <span class="menu__info-span">3 900₽</span>
+            </div>
+          </a>
+
+          <a class="menu__item" href="./product.html">
+            <div class="menu__image">
+              <div class="menu__img-wrapper"></div>
+              <img class="menu__img" src="./images/menu/4.jpg" alt="">
+            </div>
+            <div class="menu__info">
+              <h4 class="menu__info-title">Nike Pegasus</h4>
+              <p class="menu__info-text">Кроссовки беговые</p>
+            </div>
+            <div class="menu__info-price">
+              <span class="menu__info-price__span">3100</span>₽
+              <span class="menu__info-span">3 900₽</span>
+            </div>
+          </a>
+
+          <a class="menu__item" href="./product.html">
+            <div class="menu__image">
+              <div class="menu__img-wrapper"></div>
+              <img class="menu__img" src="./images/menu/5.jpg" alt="">
+            </div>
+            <div class="menu__info">
+              <h4 class="menu__info-title">Adidas Alphabounce</h4>
+              <p class="menu__info-text">Кроссовки беговые</p>
+            </div>
+            <div class="menu__info-price">
+              <span class="menu__info-price__span">2700</span>₽
+              <span class="menu__info-span">3 900₽</span>
+            </div>
+          </a>
+
+          <a class="menu__item" href="./product.html">
+            <div class="menu__image">
+              <div class="menu__img-wrapper"></div>
+              <img class="menu__img" src="./images/menu/6.jpg" alt="">
+            </div>
+            <div class="menu__info">
+              <h4 class="menu__info-title">Adidas Alphabounce</h4>
+              <p class="menu__info-text">Кроссовки беговые</p>
+            </div>
+            <div class="menu__info-price">
+              <span class="menu__info-price__span">2700</span>₽
+              <span class="menu__info-span">3 900₽</span>
+            </div>
+          </a>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="delivery" id="delivery">
+      <div class="container">
+        <h2 class="delivery__title title">
+          Доставка
+        </h2>
+        <div class="delivery__inner">
+          <div class="delivery__image">
+            <img class="delivery__img" src="./images/delivery.png" alt="">
+          </div>
+          <div class="delivery__box">
+            <h3 class="delivery__info-title">
+              Способы доставки
+            </h3>
+            <div class="delivery__info">
+              <p class="delivery__info-subtitle">Курьером</p>
+              <p class="delivery__info-text">
+                Доставка по Челябинску <strong>бесплатна.</strong>
+              </p>
+              <p class="delivery__info-text">
+                Доставка курьером «до двери» осуществляется в течение <strong>48 часов</strong> после утверждения заказа.
+              </p>
+              <p class="delivery__info-text">
+                Мы знаем, как важно иметь возможность примерить обувь перед оплатой, поэтому сделали доставку абсолютно бесплатной!
+              </p>
+              <p class="delivery__info-text">
+                Вы можете заказать до 5 товаров в одном заказе, примерить и рассмотреть товар перед тем, как оплатить его.
+              </p>
+              <p class="delivery__info-text">
+                Мы считаем, что такой подход делает покупки осознанными и еще более приятными.
+              </p>
+            </div>
+            <div class="delivery__info">
+              <p class="delivery__info-subtitle">Самовывоз</p>
+              <p class="delivery__info-text">
+                Вы можете самостоятельно приехать и выбрать кроссовки или забрать свой заказ.
+              </p>
+              <p class="delivery__info-text">
+                <span>Время работы:</span> C 10:30 до 18:00
+              </p>
+              <p class="delivery__info-text">
+                <span>Адресс:</span> Челябинск, улица Кирова 88
+              </p>
+              <p class="delivery__info-text">
+                Спасибо, что Вы с нами!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <h2 class="contacts__title title">
+          Контакты
+        </h2>
+        <div class="contacts__inner">
+          <div class="contacts__info">
+            <a class="contacts__info-inner" href="https://vk.com" target="_blank">
+              <svg class="contacts__info-img" width="70" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+                <path fill="#222"
+                  d="M52.57,0H17.43A17.44,17.44,0,0,0,0,17.43V52.57A17.44,17.44,0,0,0,17.43,70H52.57A17.44,17.44,0,0,0,70,52.57V17.43A17.44,17.44,0,0,0,52.57,0ZM65,53A12,12,0,0,1,53,65H17A12,12,0,0,1,5,53V17A12,12,0,0,1,17,5H53A12,12,0,0,1,65,17Z" />
+                <path class="contacts__info-path" fill="#222"
+                  d="M61.2,22.69c.37-1.25,0-2.17-1.8-2.17h-6a2.55,2.55,0,0,0-2.59,1.67s-3,7.31-7.33,12c-1.39,1.37-2,1.81-2.79,1.81-.37,0-.95-.44-.95-1.69V22.69c0-1.5-.42-2.17-1.68-2.17H28.71a1.43,1.43,0,0,0-1.52,1.35c0,1.42,2.15,1.75,2.37,5.75v8.67c0,1.9-.34,2.25-1.1,2.25-2,0-6.95-7.34-9.86-15.73-.59-1.63-1.17-2.29-2.7-2.29h-6c-1.7,0-2,.79-2,1.67,0,1.56,2,9.3,9.43,19.54,4.93,7,11.88,10.77,18.2,10.77,3.8,0,4.26-.84,4.26-2.29,0-6.67-.34-7.3,1.56-7.3.88,0,2.4.44,5.94,3.8,4.06,4,4.72,5.79,7,5.79h6c1.7,0,2.56-.84,2.06-2.5-1.13-3.49-8.8-10.66-9.14-11.14-.88-1.12-.63-1.62,0-2.62C53.17,36.23,60.45,26.12,61.2,22.69Z" />
+              </svg>
+              <div class="contacts__info-box">
+                <div class="contacts__info-title">Наша группа ВК</div>
+                <div class="contacts__info-text">Кроссовки в Челябинске</div>
+              </div>
+            </a>
+            <a class="contacts__info-inner" href="mailto:Yandex@yandex.ru" target="_blank">
+              <svg class="contacts__info-img" width="70" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+                <path class="contacts__info-path" fill="#222"
+                  d="M57,15H14a5,5,0,0,0-5,5V49.78a5,5,0,0,0,5,5H57a5,5,0,0,0,5-5V20A5,5,0,0,0,57,15Zm0,5v4.22c-2.32,1.89-6,4.83-13.93,11-1.74,1.37-5.2,4.66-7.6,4.62s-5.86-3.25-7.6-4.62C20,29,16.29,26.08,14,24.19V20ZM14,49.78V30.57c2.37,1.89,5.73,4.54,10.86,8.55,2.26,1.78,6.23,5.72,10.67,5.69S43.83,41,46.17,39.12c5.12-4,8.49-6.66,10.86-8.55V49.78Z" />
+                <path fill="#222"
+                  d="M52.57,0H17.43A17.44,17.44,0,0,0,0,17.43V52.57A17.44,17.44,0,0,0,17.43,70H52.57A17.44,17.44,0,0,0,70,52.57V17.43A17.44,17.44,0,0,0,52.57,0ZM65,53A12,12,0,0,1,53,65H17A12,12,0,0,1,5,53V17A12,12,0,0,1,17,5H53A12,12,0,0,1,65,17Z" />
+              </svg>
+              <div class="contacts__info-box">
+                <div class="contacts__info-title">Яндекс почта</div>
+                <div class="contacts__info-text">Yandex@yandex.ru</div>
+              </div>
+            </a>
+            <a class="contacts__info-inner" href="tel:89514598989">
+              <svg class="contacts__info-img" width="70" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+                <path class="contacts__info-path" fill="#222"
+                  d="M47.32,8.81H23.16A5.06,5.06,0,0,0,18,13.75V56.56a5.06,5.06,0,0,0,5.18,4.94H47.32a5.06,5.06,0,0,0,5.18-4.94V13.75A5.06,5.06,0,0,0,47.32,8.81ZM40.8,58.65a1.79,1.79,0,0,1-2,1.53H31.65a1.79,1.79,0,0,1-2-1.53v-.74a1.79,1.79,0,0,1,2-1.51h7.18a1.81,1.81,0,0,1,2,1.51Zm6.7-7.54a1.36,1.36,0,0,1-1.31,1.39H24.29A1.36,1.36,0,0,1,23,51.11V14.89a1.36,1.36,0,0,1,1.31-1.39h21.9a1.36,1.36,0,0,1,1.31,1.39Z" />
+                <path fill="#222"
+                  d="M52.57,0H17.43A17.44,17.44,0,0,0,0,17.43V52.57A17.44,17.44,0,0,0,17.43,70H52.57A17.44,17.44,0,0,0,70,52.57V17.43A17.44,17.44,0,0,0,52.57,0ZM65,53A12,12,0,0,1,53,65H17A12,12,0,0,1,5,53V17A12,12,0,0,1,17,5H53A12,12,0,0,1,65,17Z" />
+              </svg>
+              <div class="contacts__info-box">
+                <div class="contacts__info-title">Номер телефона</div>
+                <div class="contacts__info-text">+7 950 444-55-55</div>
+              </div>
+            </a>
+            <a class="contacts__info-inner" href="https://yandex.ru/maps/?um=constructor%3A7275f6113d03b3cca1593b90ebd2c731b7e9abc7ec08448b85421bf760fc7f3f&source=constructorLink" target="_blank">
+              <svg class="contacts__info-img" width="70" height="70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+                <path class="contacts__info-path" fill="#222"
+                  d="M51.29,14.87A22.87,22.87,0,0,0,18.94,47.22l15,15a1.73,1.73,0,0,0,2.42,0l15-15A22.85,22.85,0,0,0,51.29,14.87Zm-3.77,4.21a17.55,17.55,0,0,1,0,24.8l-12.4,12.4-12.4-12.4a17.54,17.54,0,0,1,24.8-24.8Z" />
+                <path class="contacts__info-path" fill="#222"
+                  d="M35.12,20.1A10.95,10.95,0,1,0,46,31,10.9,10.9,0,0,0,35.12,20.1Zm0,16.86a5.92,5.92,0,1,1,4.18-1.74A5.84,5.84,0,0,1,35.12,37Z" />
+                <path fill="#222"
+                  d="M52.57,0H17.43A17.44,17.44,0,0,0,0,17.43V52.57A17.44,17.44,0,0,0,17.43,70H52.57A17.44,17.44,0,0,0,70,52.57V17.43A17.44,17.44,0,0,0,52.57,0ZM65,53A12,12,0,0,1,53,65H17A12,12,0,0,1,5,53V17A12,12,0,0,1,17,5H53A12,12,0,0,1,65,17Z" />
+              </svg>
+              <div class="contacts__info-box">
+                <div class="contacts__info-title">Адресс</div>
+                <div class="contacts__info-text">Челябинск, улица Кирова 88</div>
+              </div>
+            </a>
+          </div>
+          <div class="contacts__map-inner" id="map">
+            <script id="map" type="text/javascript" charset="utf-8" async
+              src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A31ca16f860a10c601bd7e7751aecab5bbc2b0987f0b1d5c6480ee62ef856248b&amp;max-width=590&amp;max-height=400&amp;lang=ru_RU&amp;scroll=true"></script>
           </div>
         </div>
       </div>
@@ -241,143 +393,92 @@
 
   </main>
 
+
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <div class="footer-info">
-          <div class="footer__box">
-            <a class="footer__logo header__logo" href="#">
-              <img class="logo" src="./images/logo.png" alt="">
-              <div class="logo-text">Artificial Intelligence</div>
+        <div class="footer__content">
+          <div class="logo footer__logo">
+            <a class="logo__link" href="#" data-scroll="#header-content">
+              <img src="./images/logo.svg" alt="">
             </a>
-            <p class="footer-info__text">
-              Lorem ipsum is placeholder text commonly used in the graphic, print, and layouts and visual mockups.
-            </p>
-            <a class="footer-info__email" href="mailto:Company@gmail.com.com">Company@gmail.com.com</a>
-            <a class="footer-info__phone" href="tel:0643321233">Phone: (064) 332-1233</a>
-            <a class="footer-info__geo" href="#">450 Wall Street, USA, New York</a>
           </div>
-        </div>
-        <div class="footer__wrapper">
-          <h6 class="footer__title">INFORMATION</h6>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__link" href="#">New Collection</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">About Store</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Contact Us</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Latest News</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Our Sitemap</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Orders History</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__wrapper">
-          <h6 class="footer__title">FOOTER MENU</h6>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__link" href="#">Instagram profile</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">New Collection</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Contact Us</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Latest News</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Terms & Conditions</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Purchase Theme</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__wrapper">
-          <h6 class="footer__title">USEFUL LINKS</h6>
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__link" href="#">Instagram profile</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">New Collection</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Contact Us</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Latest News</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Terms & Conditions</a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">Purchase Theme</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-oop">
-          <div class="footer__box">
-            <h6 class="footer__title">ABOUT THE STORE</h6>
-            <p class="footer-oop__text">
-              Lorem ipsum is placeholder text commonly used in the graphic, print, and layouts and visual mockups.
-            </p>
-            <a class="footer-oop__link" href="www.company.com">www.company.com</a>
-            <ul class="footer-oop__list">
-              <li class="footer-oop__item">
-                <a class="footer-oop__link" href="#">
-                  <img class="footer-oop__img" src="images/icon/1.svg" alt="">
-                </a>
-              </li>
-              <li class="footer-oop__item">
-                <a class="footer-oop__link" href="#">
-                  <img class="footer-oop__img" src="images/icon/2.svg" alt="">
-                </a>
-              </li>
-              <li class="footer-oop__item">
-                <a class="footer-oop__link" href="#">
-                  <img class="footer-oop__img" src="images/icon/3.svg" alt="">
-                </a>
-              </li>
-              <li class="footer-oop__item">
-                <a class="footer-oop__link" href="#">
-                  <img class="footer-oop__img" src="images/icon/4.svg" alt="">
-                </a>
-              </li>
-              <li class="footer-oop__item">
-                <a class="footer-oop__link" href="#">
-                  <img class="footer-oop__img" src="images/icon/5.svg" alt="">
-                </a>
-              </li>
-            </ul>
-            <div class="footer-oop__lang">
-              <img src="images/icon/planet.svg" alt="">
-              <form class="footer-oop__form" action="#">
-                <select class="footer-oop__sort select-style">
-                  <option value="">English</option>
-                  <option value="">Russian</option>
-                </select>
-              </form>
+          <div class="footer__text">
+            Хотите стильные кроссовки?
+          </div>
+          <p class="footer__subtitle">
+            Обращатесь к нам
+          </p>
+          <a class="footer__social" href="https://vk.com" target="_blank">
+            <div class="footer__image" >
+              <svg class="footer__img" width="65" height="65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 70">
+                <rect fill="#2787f5" width="70" height="70" rx="17.43" />
+                <path fill="#fff"
+                  d="M61.19,22.69c.38-1.25,0-2.17-1.8-2.17h-6a2.57,2.57,0,0,0-2.6,1.67s-3,7.3-7.33,12c-1.38,1.37-2,1.81-2.78,1.81-.38,0-.95-.44-.95-1.69V22.69c0-1.5-.43-2.17-1.68-2.17H28.71a1.43,1.43,0,0,0-1.52,1.35c0,1.42,2.15,1.75,2.37,5.75v8.67c0,1.9-.35,2.25-1.11,2.25-2,0-6.94-7.34-9.86-15.73-.59-1.63-1.16-2.29-2.69-2.29h-6c-1.7,0-2,.79-2,1.67,0,1.56,2,9.3,9.42,19.54,4.94,7,11.88,10.77,18.2,10.77,3.8,0,4.27-.84,4.27-2.29,0-6.68-.35-7.3,1.56-7.3.88,0,2.4.43,5.94,3.8,4,4,4.72,5.79,7,5.79h6c1.7,0,2.56-.84,2.07-2.5-1.14-3.49-8.8-10.66-9.15-11.14-.88-1.12-.62-1.62,0-2.62C53.16,36.23,60.45,26.12,61.19,22.69Z" />
+              </svg>
             </div>
-          </div>
+            <div class="footer__social-box">
+              <p class="footer__info">Наша группа ВК</p>
+              <div class="footer__info-link">Кроссовки в Челябинске</div>
+            </div>
+          </a>
         </div>
+        <div class="footer__nav">
+          <p class="footer__info">НАВИГАЦИЯ</p>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#" data-scroll="#about">
+                <span>О нас</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="./menu.html">
+                <span>Кроссовки</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="./quality.html">
+                <span>Качество</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#" data-scroll="#delivery">
+                <span>Доставка</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="./gallery.html">
+                <span>Архив</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#" data-scroll="#contacts">
+                <span>Контакты</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__connection">
+          <a class="footer__box" href="https://yandex.ru/maps/?um=constructor%3A7275f6113d03b3cca1593b90ebd2c731b7e9abc7ec08448b85421bf760fc7f3f&source=constructorLink" target="_blank">
+            <p class="footer__info">Адресс</p>
+            <div class="footer__info-link">Челябинск, улица Кирова 88</div>
+          </a>
+          <a class="footer__box" href="mailto:yandex@yandex.ru">
+            <p class="footer__info">E-MAIL</p>
+            <div class="footer__info-link">Yandex@yandex.ru</div>
+          </a>
+          <a class="footer__box" href="tel:89504445555">
+            <p class="footer__info">ТЕЛЕФОН</p>
+            <div class="footer__info-link">+7 950 444-55-55</div>
+          </a>
+        </div>
+      </div>
+      <div class="footer__wrapper">
+        Авторские права @2021
       </div>
     </div>
   </footer>
 
-
-  <!-- <script src="js/wow.min.js"></script> -->
   <script src="js/main.min.js"></script>
 </body>
 </html>
